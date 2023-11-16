@@ -5,10 +5,10 @@ import style from './style.module.scss';
 
 export default function Header() {
   return (
-    <Wrapper purple>  
+    <Wrapper purple>
       <Container>
         <header className={style.header}>
-          <Logo header />
+          <Logo top />
           <div className={style.div}>
             <Nav list={header[0]} />
             <Button>
