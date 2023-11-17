@@ -10,6 +10,26 @@ import spiralDec from '../assets/icons/decorations/spiral.svg';
 import spiralBlackDec from '../assets/icons/decorations/spiralBlack.svg';
 import waveDec from '../assets/icons/decorations/wave.svg';
 
+// home
+// homeMain
+import homeMainBack1 from '../assets/images/home/homeMain-back1.svg';
+import homeMainBack2 from '../assets/images/home/homeMain-back2.svg';
+import homeMain1 from '../assets/images/home/homeMain1.png';
+import homeMain2 from '../assets/images/home/homeMain2.png';
+import homeMain3 from '../assets/images/home/homeMain3.png';
+import homeMain4 from '../assets/images/home/homeMain4.png';
+import homeMain5 from '../assets/images/home/homeMain5.png';
+import homeMain6 from '../assets/images/home/homeMain6.png';
+import homeMain7 from '../assets/images/home/homeMain7.png';
+import homeMain8 from '../assets/images/home/homeMain8.png';
+import homeMain9 from '../assets/images/home/homeMain9.png';
+import homeMain10 from '../assets/images/home/homeMain10.png';
+import homeMain11 from '../assets/images/home/homeMain11.png';
+import homeMain12 from '../assets/images/home/homeMain12.png';
+import homeMain13 from '../assets/images/home/homeMain13.png';
+import homeMain14 from '../assets/images/home/homeMain14.png';
+import homeMain15 from '../assets/images/home/homeMain15.png';
+
 // social
 import facebook from '../assets/icons/social/facebook.svg';
 import facebookFill from '../assets/icons/social/facebookFill.svg';
@@ -111,6 +131,34 @@ export const home = [
     text: 'Where every child shines bright as a star!',
     button: 'Book the Star Experience!',
     linkButton: '/pricing',
+    imgs: [
+      {
+        id: 1,
+        name: 'backImage',
+        imgUrls: [homeMainBack1, homeMainBack2],
+      },
+      {
+        id: 2,
+        name: 'frontImage',
+        imgUrls: [
+          homeMain1,
+          homeMain2,
+          homeMain3,
+          homeMain4,
+          homeMain5,
+          homeMain6,
+          homeMain7,
+          homeMain8,
+          homeMain9,
+          homeMain10,
+          homeMain11,
+          homeMain12,
+          homeMain13,
+          homeMain14,
+          homeMain15,
+        ],
+      },
+    ],
     social: [
       {
         id: 1,
