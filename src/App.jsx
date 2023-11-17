@@ -1,11 +1,19 @@
+import { Routes, Route } from 'react-router-dom';
+import { About, Blog, Faq, Home, Pricing, Services } from './pages';
 import { Header } from './components';
-import { Home } from './pages';
 
 export default function App() {
   return (
     <>
       <Header />
-      <Home />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/services" element={<Services />} />
+        <Route path="/faq" element={<Faq />} />
+        <Route path="/blog" element={<Blog />} />
+        <Route path="/pricing" element={<Pricing />} />
+      </Routes>
     </>
   );
 }
