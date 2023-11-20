@@ -1,0 +1,86 @@
+@import '../../../styles/var';
+
+.title {
+  font-size: 62px;
+  font-family: $poppins;
+  font-weight: 700;
+  letter-spacing: 2%;
+  color: $black-171;
+  padding-top: 130px;
+  position: relative;
+
+  &__wrap {
+    display: flex;
+    justify-content: center;
+  }
+
+  &::after {
+    content: url(../../../assets/icons/other/line.svg);
+    position: absolute;
+    bottom: -35px;
+    right: -20px;
+  }
+
+  &::before {
+    content: url(../../../assets/icons/other/bulb.svg);
+    position: absolute;
+    bottom: -10px;
+    left: -80px;
+  }
+}
+
+.list {
+  padding: 70px 0 100px;
+  display: grid;
+  grid-template: repeat(1, 1fr) / repeat(4, 1fr);
+  gap: 40px;
+  align-items: center;
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 380px;
+    max-width: 370px;
+    box-shadow: 0px 4px 10px rgba($color: $black, $alpha: 0.1);
+
+    &__img {
+      width: 130px;
+      height: 130px;
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      z-index: 1;
+
+      & img {
+        width: 106px;
+        height: 106px;
+      }
+
+      &::before {
+        content: '';
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        background-color: $white-e8e;
+        border-radius: 50%;
+        top: 0;
+        left: 0;
+        z-index: -1;
+      }
+    }
+
+    &__p {
+      font-size: 28px;
+      font-weight: 600;
+      font-family: $poppins;
+      letter-spacing: 2%;
+      line-height: 130%;
+      color: $black-3a3;
+      text-align: center;
+      padding: 40px 30px 0;
+    }
+  }
+}

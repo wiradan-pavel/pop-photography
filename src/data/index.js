@@ -190,6 +190,7 @@ export const home = [
     id: 2,
     name: 'homeFeatures',
     title: 'Features/Benefits',
+    whyChooseTitle: 'Why Choose Pop Photography?',
     cards: [
       {
         id: 1,
@@ -212,5 +213,31 @@ export const home = [
         imgUrl: flapper,
       },
     ],
+    list: [
+      {
+        id: 1,
+        text: 'Decades of Excellence: Over 40 Years Of Crafting stories, not just photos.',
+      },
+      {
+        id: 2,
+        text: 'Tailored Experience: One-to-one advice ensuring every shot is perfect.',
+      },
+      {
+        id: 3,
+        text: 'Safety First: Studios prioritising child safety and cleanliness.',
+      },
+      {
+        id: 4,
+        text: 'All-Inclusive: From non-toxic props to professional editing, we’ve got you covered.',
+      },
+      {
+        id: 5,
+        text: 'Showcase Ready: A vast range of printing and framing options to flaunt your memories.',
+      },
+    ],
+    button: {
+      text: 'LEARN MORE',
+      link: '/about',
+    },
   },
 ];

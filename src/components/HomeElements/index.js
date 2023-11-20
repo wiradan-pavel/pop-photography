@@ -1,3 +1,4 @@
 import HomeMain from './HomeMain';
+import HomeFeatures from './HomeFeatures';
 
-export { HomeMain };
+export { HomeMain, HomeFeatures };
