@@ -1,2 +1,2 @@
-# vite + react + scss + react-router-dom 
+# vite + react + scss + react-router-dom + react-player
 
