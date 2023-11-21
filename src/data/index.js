@@ -39,6 +39,14 @@ import homeFeatures1 from '../assets/images/home/homeFeatures1.png';
 import homeFeatures2 from '../assets/images/home/homeFeatures2.jpg';
 import homeFeatures3 from '../assets/images/home/homeFeatures3.jpg';
 import backgroundHomeFeatures from '../assets/images/home/backgroundHomeFeatures.png';
+// homeVideos
+import video1 from '../assets/videos/video1.mp4';
+import video2 from '../assets/videos/video2.mp4';
+import video3 from '../assets/videos/video3.mp4';
+import playIcon from '../assets/icons/other/play.svg';
+import previewVideo1 from '../assets/videos/previewVideos1.jpg';
+import previewVideo2 from '../assets/videos/previewVideos2.jpg';
+import previewVideo3 from '../assets/videos/previewVideos3.jpg';
 
 // social
 import facebook from '../assets/icons/social/facebook.svg';
@@ -255,5 +263,26 @@ export const home = [
     otherText1: '10',
     otherText2: 'years',
     otherText3: 'of experience',
+  },
+  {
+    id: 3,
+    name: 'homeVideos',
+    title: 'Our Videos',
+    playIconUrl: playIcon,
+    previewVideosImgUrls: [previewVideo1, previewVideo2, previewVideo3],
+    videos: [
+      {
+        id: 1,
+        url: video1,
+      },
+      {
+        id: 2,
+        url: video2,
+      },
+      {
+        id: 3,
+        url: video3,
+      },
+    ],
   },
 ];
