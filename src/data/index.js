@@ -9,6 +9,7 @@ import dotsMoreDec from '../assets/icons/decorations/dotsMore.svg';
 import spiralDec from '../assets/icons/decorations/spiral.svg';
 import spiralBlackDec from '../assets/icons/decorations/spiralBlack.svg';
 import waveDec from '../assets/icons/decorations/wave.svg';
+import homeFeaturesDec from '../assets/icons/decorations/homeFeaturesDec.svg';
 
 // home
 // homeMain
@@ -29,6 +30,14 @@ import homeMain12 from '../assets/images/home/homeMain12.png';
 import homeMain13 from '../assets/images/home/homeMain13.png';
 import homeMain14 from '../assets/images/home/homeMain14.png';
 import homeMain15 from '../assets/images/home/homeMain15.png';
+// homeFeatures
+import camera from '../assets/icons/features/camera.svg';
+import mirror from '../assets/icons/features/mirror.svg';
+import book from '../assets/icons/features/book.svg';
+import flapper from '../assets/icons/features/flapper.svg';
+import homeFeatures1 from '../assets/images/home/homeFeatures1.png';
+import homeFeatures2 from '../assets/images/home/homeFeatures2.jpg';
+import backgroundHomeFeatures from '../assets/images/home/backgroundHomeFeatures.png';
 
 // social
 import facebook from '../assets/icons/social/facebook.svg';
@@ -39,12 +48,6 @@ import linkedIn from '../assets/icons/social/linkedIn.svg';
 import tiktokFill from '../assets/icons/social/tiktokFill.svg';
 import twitter from '../assets/icons/social/twitter.svg';
 import youtubeFill from '../assets/icons/social/youtubeFill.svg';
-
-// features
-import camera from '../assets/icons/features/camera.svg';
-import mirror from '../assets/icons/features/mirror.svg';
-import book from '../assets/icons/features/book.svg';
-import flapper from '../assets/icons/features/flapper.svg';
 
 export const decorationImgUrls = {
   cameraDec: cameraDec,
@@ -190,7 +193,8 @@ export const home = [
     id: 2,
     name: 'homeFeatures',
     title: 'Features/Benefits',
-    whyChooseTitle: 'Why Choose Pop Photography?',
+    whyChooseTitle1: 'Why Choose',
+    whyChooseTitle2: 'Pop Photography?',
     cards: [
       {
         id: 1,
@@ -239,5 +243,12 @@ export const home = [
       text: 'LEARN MORE',
       link: '/about',
     },
+    imgUrls: [
+      homeFeatures1,
+      homeFeatures2,
+      homeFeaturesDec,
+      dotsLessBlackDec,
+      backgroundHomeFeatures,
+    ],
   },
 ];

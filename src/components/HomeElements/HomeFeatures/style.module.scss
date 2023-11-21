@@ -84,3 +84,100 @@
     }
   }
 }
+
+.why {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+
+  &__left {
+    position: relative;
+    z-index: 1;
+    &::after {
+      content: url(../../../assets/icons/decorations/spiralBlack.svg);
+      position: absolute;
+      bottom: -5%;
+      right: 20%;
+      z-index: 1;
+    }
+
+    &__title {
+      font-size: 65px;
+      color: $black-171;
+      font-family: $poppins;
+      font-weight: 700;
+      line-height: 130%;
+      max-width: 620px;
+      position: relative;
+      z-index: 1;
+
+      &::after {
+        content: url(../../../assets/icons/other/line.svg);
+        position: absolute;
+        top: 125px;
+        right: 10px;
+        z-index: -1;
+      }
+    }
+    &__list {
+      list-style: disc;
+      color: $grey-898;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      max-width: 800px;
+      padding: 55px 0 45px 25px;
+
+      & li {
+        font-size: 22px;
+        font-family: $poppins;
+        font-weight: 400;
+        line-height: 180%;
+      }
+    }
+  }
+
+  &__right {
+    width: 674px;
+    height: 624px;
+    position: relative;
+    z-index: 2;
+
+    &__photomain__left {
+      position: absolute;
+      width: 330px;
+      height: 562px;
+      top: 0;
+      left: 0;
+      z-index: 1;
+    }
+
+    &__photomain__right {
+      position: absolute;
+      width: 330px;
+      height: 562px;
+      bottom: 0;
+      right: 0;
+      z-index: 1;
+    }
+
+    &__photodec__left {
+      position: absolute;
+      bottom: 25px;
+      left: -25px;
+    }
+
+    &__photodec__right1 {
+      position: absolute;
+      bottom: 290px;
+      right: -130px;
+    }
+
+    &__photodec__right2 {
+      position: absolute;
+      top: -25px;
+      right: 228px;
+    }
+  }
+}
