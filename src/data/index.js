@@ -37,6 +37,7 @@ import book from '../assets/icons/features/book.svg';
 import flapper from '../assets/icons/features/flapper.svg';
 import homeFeatures1 from '../assets/images/home/homeFeatures1.png';
 import homeFeatures2 from '../assets/images/home/homeFeatures2.jpg';
+import homeFeatures3 from '../assets/images/home/homeFeatures3.jpg';
 import backgroundHomeFeatures from '../assets/images/home/backgroundHomeFeatures.png';
 
 // social
@@ -250,5 +251,9 @@ export const home = [
       dotsLessBlackDec,
       backgroundHomeFeatures,
     ],
+    imgUrlOther: homeFeatures3,
+    otherText1: '10',
+    otherText2: 'years',
+    otherText3: 'of experience',
   },
 ];

@@ -46,6 +46,23 @@ export default function HomeFeatures() {
             <img className={style.why__right__photodec__right2} src={data.imgUrls[3]} alt="" />
           </div>
         </div>
+
+        <div className={style.other}>
+          <div className={style.other__left}>
+            <img src={data.imgUrlOther} alt="photo" />
+          </div>
+          <div className={style.other__right}>
+            <div className={style.other__right__ten}>
+              <p>{data.otherText1}</p>
+            </div>
+            <div className={style.other__right__year}>
+              <p>{data.otherText2}</p>
+            </div>
+            <div className={style.other__right__exp}>
+              <p>{data.otherText3}</p>
+            </div>
+          </div>
+        </div>
       </Container>
     </Wrapper>
   );

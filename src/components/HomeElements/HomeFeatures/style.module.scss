@@ -181,3 +181,105 @@
     }
   }
 }
+
+.other {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 100px 0;
+
+  &__left {
+    & img {
+      width: 869px;
+      height: 570px;
+    }
+  }
+
+  &__right {
+    width: 562px;
+    height: 333px;
+    position: relative;
+    z-index: 10;
+
+    &::after {
+      position: absolute;
+      content: url(../../../assets/icons/decorations/groupPeopleStars.svg);
+      top: 8px;
+      right: 44px;
+    }
+
+    &::before {
+      position: absolute;
+      content: url(../../../assets/icons/decorations/roundedFullFill.svg);
+      bottom: -200px;
+      right: -35px;
+    }
+
+    & div {
+      position: absolute;
+    }
+
+    &__ten {
+      top: 0;
+      left: 0;
+      background-color: $purple;
+      font-size: 200px;
+      font-family: $poppins;
+      font-weight: 700;
+      color: $white;
+      padding: 10px;
+
+      &::before {
+        position: absolute;
+        content: '';
+        border: 3px solid $purple;
+        top: 13px;
+        left: 15px;
+        width: 224px;
+        height: 221px;
+      }
+
+      &::after {
+        position: absolute;
+        content: url(../../../assets/icons/decorations/dotsLessBlack.svg);
+        top: -155px;
+        left: -30px;
+      }
+    }
+
+    &__year {
+      font-size: 80px;
+      font-family: $poppins;
+      font-weight: 700;
+      line-height: 137%;
+      color: $black-171;
+      text-transform: uppercase;
+      bottom: 65px;
+      right: 0;
+    }
+
+    &__exp {
+      font-size: 50px;
+      font-family: $poppins;
+      font-weight: 600;
+      line-height: 137%;
+      color: $white;
+      letter-spacing: 10px;
+      text-transform: uppercase;
+      bottom: 0px;
+      right: 27px;
+      z-index: 2;
+
+      &::after {
+        content: '';
+        position: absolute;
+        background-color: $sky;
+        z-index: -1;
+        top: 0;
+        left: -20px;
+        right: -20px;
+        bottom: 0;
+      }
+    }
+  }
+}
