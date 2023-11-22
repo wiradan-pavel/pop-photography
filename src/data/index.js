@@ -47,6 +47,8 @@ import playIcon from '../assets/icons/other/play.svg';
 import previewVideo1 from '../assets/videos/previewVideos1.jpg';
 import previewVideo2 from '../assets/videos/previewVideos2.jpg';
 import previewVideo3 from '../assets/videos/previewVideos3.jpg';
+// homeTestimonials
+import homeTestimonials from '../assets/images/home/homeTestimonials.jpg';
 
 // social
 import facebook from '../assets/icons/social/facebook.svg';
@@ -284,5 +286,40 @@ export const home = [
         url: video3,
       },
     ],
+  },
+  {
+    id: 4,
+    name: 'homeTestimonials',
+    title: 'Testimonials',
+    list: [
+      {
+        id: 1,
+        imgUrl: homeTestimonials,
+        text: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
+        nickname: 'John SMITH',
+        who: 'Kid Model',
+        rate: [1, 1, 1, 1, 0.5],
+      },
+      {
+        id: 2,
+        imgUrl: homeTestimonials,
+        text: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
+        nickname: 'John SMITH',
+        who: 'Kid Model',
+        rate: [1, 1, 1, 1, 0],
+      },
+      {
+        id: 3,
+        imgUrl: homeTestimonials,
+        text: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
+        nickname: 'John SMITH',
+        who: 'Kid Model',
+        rate: [1, 1, 1, 1, 1],
+      },
+    ],
+    button: {
+      text: 'Book Now',
+      link: '/pricing',
+    },
   },
 ];

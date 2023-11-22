@@ -1,4 +1,4 @@
-import { HomeFeatures, HomeMain, HomeVideos } from '../components/HomeElements';
+import { HomeFeatures, HomeMain, HomeTestimonials, HomeVideos } from '../components/HomeElements';
 
 export default function Home() {
   return (
@@ -6,6 +6,7 @@ export default function Home() {
       <HomeMain />
       <HomeFeatures />
       <HomeVideos />
+      <HomeTestimonials />
     </>
   );
 }
