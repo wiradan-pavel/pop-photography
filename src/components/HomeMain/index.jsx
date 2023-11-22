@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
-import { Button, Container, Wrapper } from '../../elements';
-import { home } from '../../../data';
+import { Button, Container, Wrapper } from '../elements';
+import { home } from '../../data';
 import style from './style.module.scss';
 
 export default function HomeMain() {

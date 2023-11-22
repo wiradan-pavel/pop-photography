@@ -1,4 +1,4 @@
-@import './../../../styles/var';
+@import '../../styles/var';
 
 .title {
   font-size: 62px;
@@ -9,14 +9,14 @@
 
   &::after {
     position: absolute;
-    content: url(../../../assets/icons/other/line213.svg);
+    content: url(../../assets/icons/other/line213.svg);
     bottom: -35px;
     left: 135px;
   }
 
   &::before {
     position: absolute;
-    content: url(../../../assets/icons/other/youtube.svg);
+    content: url(../../assets/icons/other/youtube.svg);
     top: -80px;
     left: 0px;
   }

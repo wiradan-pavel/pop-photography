@@ -1,6 +1,6 @@
 import ReactPlayer from 'react-player';
-import { Wrapper, Container } from '../../elements';
-import { home } from '../../../data';
+import { Wrapper, Container } from '../elements';
+import { home } from '../../data';
 import style from './style.module.scss';
 
 export default function HomeVideos() {

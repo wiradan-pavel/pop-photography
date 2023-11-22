@@ -1,0 +1,32 @@
+@import '../../styles/var';
+
+.title {
+  font-size: 65px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  align-items: center;
+  font-family: $poppins;
+  font-weight: 700;
+  color: $black-171;
+  padding-bottom: 100px;
+  position: relative;
+
+  &::after {
+    position: absolute;
+    content: url(../../assets/icons/other/line213.svg);
+    bottom: 77px;
+    right: 36%;
+  }
+}
+
+.gallery {
+  & img {
+    transition: $normal;
+
+    &:hover {
+      cursor: pointer;
+      filter: brightness(1.2);
+    }
+  }
+}

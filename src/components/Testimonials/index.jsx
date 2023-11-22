@@ -1,12 +1,12 @@
 import { Link } from 'react-router-dom';
-import { Wrapper, Container, Button } from '../../elements';
-import { home } from '../../../data';
-import starUrl from '../../../assets/icons/other/star.svg';
-import starMiddleUrl from '../../../assets/icons/other/starMiddle.svg';
-import starEmptyUrl from '../../../assets/icons/other/starEmpty.svg';
+import { Wrapper, Container, Button } from '../elements';
+import { home } from '../../data';
+import starUrl from '../../assets/icons/other/star.svg';
+import starMiddleUrl from '../../assets/icons/other/starMiddle.svg';
+import starEmptyUrl from '../../assets/icons/other/starEmpty.svg';
 import style from './style.module.scss';
 
-export default function HomeTestimonials() {
+export default function Testimonials() {
   const data = home[3];
 
   return (

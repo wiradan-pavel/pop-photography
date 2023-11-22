@@ -1,4 +1,4 @@
-@import '../../../styles/var';
+@import '../../styles/var';
 
 .title {
   text-align: center;
@@ -10,14 +10,14 @@
 
   &::after {
     position: absolute;
-    content: url(../../../assets/icons/other/line213.svg);
+    content: url(../../assets/icons/other/line213.svg);
     right: 41%;
     bottom: -30px;
   }
 
   &::before {
     position: absolute;
-    content: url(../../../assets/icons/other/paperPlane.svg);
+    content: url(../../assets/icons/other/paperPlane.svg);
     left: 47%;
     top: -120px;
   }
