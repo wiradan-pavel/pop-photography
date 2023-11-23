@@ -1,20 +1,19 @@
 import { Link } from 'react-router-dom';
 import { Wrapper, Container, Button } from '../elements';
-import { home } from '../../data';
+import { testimonials } from '../../data/testimonials.data';
+import { bookNow } from '../../data/buttons.data';
 import starUrl from '../../assets/icons/other/star.svg';
 import starMiddleUrl from '../../assets/icons/other/starMiddle.svg';
 import starEmptyUrl from '../../assets/icons/other/starEmpty.svg';
 import style from './style.module.scss';
 
 export default function Testimonials() {
-  const data = home[3];
-
   return (
     <Wrapper>
       <Container>
-        <h2 className={style.title}>{data.title}</h2>
+        <h2 className={style.title}>{testimonials.title}</h2>
         <div className={style.list}>
-          {data.list.map((item) => (
+          {testimonials.list.map((item) => (
             <div className={style.list__item} key={item.id}>
               <img className={style.list__item__img} src={item.imgUrl} alt="photo" />
               <p className={style.list__item__text}>{item.text}</p>
@@ -38,7 +37,7 @@ export default function Testimonials() {
         </div>
         <div className={style.button}>
           <Button>
-            <Link to={data.button.link}>{data.button.text}</Link>
+            <Link to={bookNow.link}>{bookNow.text}</Link>
           </Button>
         </div>
       </Container>

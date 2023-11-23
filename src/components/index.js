@@ -7,7 +7,7 @@ import Footer from './Footer';
 
 // HOME
 import HomeFeatures from './HomeFeatures';
-import HomeMain from './HomeMain';
+import HomeHeader from './HomeHeader';
 import HomeVideos from './HomeVideos';
 
-export { Header, Testimonials, Features, HomeMain, HomeVideos, HomeFeatures, Gallery, Footer };
+export { Header, Testimonials, Features, HomeHeader, HomeVideos, HomeFeatures, Gallery, Footer };

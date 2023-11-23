@@ -1,9 +1,16 @@
-import { Features, Gallery, HomeFeatures, HomeMain, HomeVideos, Testimonials } from '../components';
+import {
+  Features,
+  Gallery,
+  HomeFeatures,
+  HomeHeader,
+  HomeVideos,
+  Testimonials,
+} from '../components';
 
 export default function Home() {
   return (
     <>
-      <HomeMain />
+      <HomeHeader />
       <Features />
       <HomeFeatures />
       <HomeVideos />

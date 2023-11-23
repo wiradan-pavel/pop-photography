@@ -1,7 +1,7 @@
 import { useNavigate } from 'react-router-dom';
 import PhotoAlbum from 'react-photo-album';
 import { Container, Wrapper } from '../elements';
-import { gallery } from '../../data';
+import { gallery } from '../../data/gallery.data';
 import style from './style.module.scss';
 
 export default function Gallery() {
