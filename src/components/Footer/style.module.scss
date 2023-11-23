@@ -1,0 +1,99 @@
+@import '../../styles/var';
+
+.footer {
+  color: $white;
+  font-family: $poppins;
+}
+
+.content {
+  padding: 80px 0 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+
+  &__text {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 250%;
+    padding-top: 30px;
+    max-width: 454px;
+  }
+
+  &__title {
+    font-weight: 700;
+    font-size: 26px;
+  }
+
+  &__quickLinks {
+    padding-top: 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    font-weight: 500;
+    font-size: 14px;
+    color: $white-fdf;
+    font-family: $poppins;
+
+    & li a {
+      border-bottom: 1px solid transparent;
+      transition: $normal;
+
+      &:hover {
+        border-bottom-color: $white-fdf;
+      }
+    }
+  }
+
+  &__contacts {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    padding-top: 30px;
+
+    & a img {
+      width: 46px;
+      height: 46px;
+    }
+
+    &__name {
+      font-family: $lato;
+      font-weight: 400;
+      font-size: 16px;
+      padding-bottom: 7px;
+    }
+
+    &__link p {
+      font-weight: 500;
+      font-size: 14px;
+      border-bottom: 1px solid transparent;
+      transition: $normal;
+
+      &:hover {
+        border-bottom-color: $white-fdf;
+      }
+    }
+  }
+
+  &__social {
+    display: flex;
+    gap: 15px;
+    padding-top: 30px;
+  }
+}
+
+.copy {
+  text-align: center;
+  padding: 16px 0;
+  position: relative;
+
+  &::after {
+    position: absolute;
+    content: '';
+    height: 1px;
+    background-color: $white;
+    opacity: 0.2;
+    left: 0;
+    right: 0;
+    top: 0;
+  }
+}

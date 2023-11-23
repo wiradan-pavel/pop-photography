@@ -1,6 +1,6 @@
 import { Routes, Route } from 'react-router-dom';
 import { About, Blog, Faq, Home, Pricing, Services } from './pages';
-import { Header } from './components';
+import { Footer, Header } from './components';
 
 export default function App() {
   return (
@@ -14,6 +14,7 @@ export default function App() {
         <Route path="/blog" element={<Blog />} />
         <Route path="/pricing" element={<Pricing />} />
       </Routes>
+      <Footer />
     </>
   );
 }
