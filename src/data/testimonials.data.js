@@ -1,4 +1,10 @@
+// people
 import testimonials1 from '../assets/images/testimonials/testimonials1.jpg';
+
+// stars
+import star0 from '../assets/icons/star0.svg';
+import star50 from '../assets/icons/star50.svg';
+import star100 from '../assets/icons/star100.svg';
 
 export const testimonials = {
   title: 'Testimonials',
@@ -28,4 +34,7 @@ export const testimonials = {
       rate: [1, 1, 1, 1, 1],
     },
   ],
+  star0,
+  star50,
+  star100,
 };

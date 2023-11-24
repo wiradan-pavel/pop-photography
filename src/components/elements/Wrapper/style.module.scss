@@ -1,5 +1,10 @@
 @import '../../../styles/var';
 
+.purple,
+.white {
+  position: relative;
+}
+
 .purple {
   background-color: $purple;
 }

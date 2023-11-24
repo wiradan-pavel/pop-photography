@@ -1,7 +1,8 @@
+import { Link } from 'react-router-dom';
 import { Container, Logo, Wrapper } from '../elements';
 import { footer } from '../../data/footer.data';
+
 import style from './style.module.scss';
-import { Link } from 'react-router-dom';
 
 export default function Footer() {
   return (

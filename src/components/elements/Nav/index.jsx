@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
 import { header } from '../../../data/header.data';
+
 import style from './style.module.scss';
-import arrow from '../../../assets/icons/other/arrow.svg';
 
 export default function Nav() {
   return (
@@ -12,7 +12,7 @@ export default function Nav() {
           <li className={style.li} key={item.id}>
             <Link className={style.link} to={item.link}>
               {item.name}
-              {item.name === 'Services' && <img src={arrow} alt="arrow" />}
+              {item.name === 'Services' && <img src={header.arrow} alt="arrow" />}
             </Link>
             {item.name === 'Services' && (
               <ul className={style.ul__services}>

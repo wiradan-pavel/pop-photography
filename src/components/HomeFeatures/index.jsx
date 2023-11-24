@@ -1,54 +1,75 @@
 import { Link } from 'react-router-dom';
 import { Button, Container, Wrapper } from '../elements';
-import { home } from '../../data';
+import { homeWhy, homeYear } from '../../data/home.data';
+import { learnMoreBtn } from '../../data/buttons.data';
+import {
+  circlePinkDec,
+  dotsBlack18Dec,
+  groupPeopleStarsDec,
+  homeWhyPurpleDec,
+  lineYellow298Dec,
+  spiralBlackDec,
+} from '../../data/decoration.data';
+
 import style from './style.module.scss';
 
 export default function HomeFeatures() {
-  const data = home[1];
-
   return (
     <Wrapper>
       <Container>
-        <div className={style.why}>
+        {/* why */}
+        <section className={style.why}>
           <div className={style.why__left}>
             <h2 className={style.why__left__title}>
-              {data.whyChooseTitle1}
-              <br /> {data.whyChooseTitle2}
+              {homeWhy.title1}
+              <br /> {homeWhy.title2}
+              <img className={style.why__left__title__line} src={lineYellow298Dec} alt="" />
             </h2>
             <ol className={style.why__left__list}>
-              {data.list.map((item) => (
+              {homeWhy.list.map((item) => (
                 <li key={item.id}>{item.text}</li>
               ))}
             </ol>
             <Button>
-              <Link to={data.button.link}>{data.button.text}</Link>
+              <Link to={learnMoreBtn.link}>{learnMoreBtn.text}</Link>
             </Button>
+            <img className={style.why__left__spiral} src={spiralBlackDec} alt="" />
           </div>
           <div className={style.why__right}>
-            <img className={style.why__right__photomain__left} src={data.imgUrls[0]} alt="photo" />
-            <img className={style.why__right__photomain__right} src={data.imgUrls[1]} alt="photo" />
-            <img className={style.why__right__photodec__left} src={data.imgUrls[4]} alt="" />
-            <img className={style.why__right__photodec__right1} src={data.imgUrls[2]} alt="" />
-            <img className={style.why__right__photodec__right2} src={data.imgUrls[3]} alt="" />
+            <img
+              className={style.why__right__photomain__left}
+              src={homeWhy.imgUrls[0]}
+              alt="photo"
+            />
+            <img
+              className={style.why__right__photomain__right}
+              src={homeWhy.imgUrls[1]}
+              alt="photo"
+            />
+            <img className={style.why__right__photodec__dots} src={dotsBlack18Dec} alt="" />
+            <img className={style.why__right__photodec__shape} src={homeWhyPurpleDec} alt="" />
           </div>
-        </div>
-
-        <div className={style.other}>
-          <div className={style.other__left}>
-            <img src={data.imgUrlOther} alt="photo" />
+        </section>
+        {/* year */}
+        <section className={style.year}>
+          <div className={style.year__left}>
+            <img src={homeYear.imgUrl} alt="photo" />
           </div>
-          <div className={style.other__right}>
-            <div className={style.other__right__ten}>
-              <p>{data.otherText1}</p>
+          <div className={style.year__right}>
+            <div className={style.year__right__ten}>
+              <p>{homeYear.text1}</p>
+              <img className={style.year__right__ten__dots} src={dotsBlack18Dec} alt="" />
             </div>
-            <div className={style.other__right__year}>
-              <p>{data.otherText2}</p>
+            <div className={style.year__right__year}>
+              <p>{homeYear.text2}</p>
+              <img className={style.year__right__year__dec} src={groupPeopleStarsDec} alt="" />
             </div>
-            <div className={style.other__right__exp}>
-              <p>{data.otherText3}</p>
+            <div className={style.year__right__exp}>
+              <p>{homeYear.text3}</p>
             </div>
           </div>
-        </div>
+          <img className={style.year__dec} src={circlePinkDec} alt="" />
+        </section>
       </Container>
     </Wrapper>
   );

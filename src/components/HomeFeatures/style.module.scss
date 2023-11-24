@@ -9,12 +9,12 @@
   &__left {
     position: relative;
     z-index: 1;
-    &::after {
-      content: url(../../assets/icons/decorations/spiralBlack.svg);
+
+    &__spiral {
       position: absolute;
-      bottom: -5%;
-      right: 20%;
-      z-index: 1;
+      z-index: -1;
+      left: 65%;
+      bottom: -40px;
     }
 
     &__title {
@@ -27,12 +27,11 @@
       position: relative;
       z-index: 1;
 
-      &::after {
-        content: url(../../assets/icons/other/line.svg);
+      &__line {
         position: absolute;
-        top: 125px;
-        right: 10px;
         z-index: -1;
+        bottom: -20px;
+        right: 10px;
       }
     }
     &__list {
@@ -49,6 +48,7 @@
         font-family: $poppins;
         font-weight: 400;
         line-height: 180%;
+        text-transform: capitalize;
       }
     }
   }
@@ -58,6 +58,18 @@
     height: 624px;
     position: relative;
     z-index: 2;
+
+    &::before {
+      content: '';
+      position: absolute;
+      width: 329px;
+      height: 487px;
+      top: 115px;
+      left: -24px;
+      z-index: 1;
+      background: linear-gradient(186deg, #3bb5d7, #fdbe14);
+      border-radius: 0 0 0 35px;
+    }
 
     &__photomain__left {
       position: absolute;
@@ -77,31 +89,34 @@
       z-index: 1;
     }
 
-    &__photodec__left {
+    &__photodec__dots {
       position: absolute;
-      bottom: 25px;
-      left: -25px;
-    }
-
-    &__photodec__right1 {
-      position: absolute;
-      bottom: 290px;
-      right: -130px;
-    }
-
-    &__photodec__right2 {
-      position: absolute;
+      z-index: -1;
       top: -25px;
       right: 228px;
+    }
+
+    &__photodec__shape {
+      position: absolute;
+      z-index: -2;
+      right: -130px;
+      top: -100px;
     }
   }
 }
 
-.other {
+// year
+.year {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 100px 0 180px;
+
+  &__dec {
+    position: absolute;
+    bottom: 80px;
+    right: -35px;
+  }
 
   &__left {
     & img {
@@ -115,20 +130,6 @@
     height: 333px;
     position: relative;
     z-index: 10;
-
-    &::after {
-      position: absolute;
-      content: url(../../assets/icons/decorations/groupPeopleStars.svg);
-      top: 8px;
-      right: 44px;
-    }
-
-    &::before {
-      position: absolute;
-      content: url(../../assets/icons/decorations/roundedFullFill.svg);
-      bottom: -200px;
-      right: -35px;
-    }
 
     & div {
       position: absolute;
@@ -144,6 +145,12 @@
       color: $white;
       padding: 10px;
 
+      &__dots {
+        position: absolute;
+        top: -31px;
+        left: -29px;
+      }
+
       &::before {
         position: absolute;
         content: '';
@@ -152,13 +159,6 @@
         left: 15px;
         width: 224px;
         height: 221px;
-      }
-
-      &::after {
-        position: absolute;
-        content: url(../../assets/icons/decorations/dotsLessBlack.svg);
-        top: -155px;
-        left: -30px;
       }
     }
 
@@ -171,6 +171,12 @@
       text-transform: uppercase;
       bottom: 65px;
       right: 0;
+
+      &__dec {
+        position: absolute;
+        top: -150px;
+        right: 44px;
+      }
     }
 
     &__exp {

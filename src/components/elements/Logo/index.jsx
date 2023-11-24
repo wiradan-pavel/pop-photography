@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom';
-import style from './style.module.scss';
 import { header } from '../../../data/header.data';
+
+import style from './style.module.scss';
 
 export default function Logo({ top }) {
   return (

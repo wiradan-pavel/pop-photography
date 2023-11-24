@@ -22,9 +22,10 @@ import twitter from '../assets/icons/social/twitter.svg';
 // homeWhy
 import homeWhy1 from '../assets/images/home/homeWhy1.png';
 import homeWhy2 from '../assets/images/home/homeWhy2.jpg';
-import homeYear from '../assets/images/home/homeYear.jpg';
+import homeYearImg from '../assets/images/home/homeYear.jpg';
 
 // homeVideos
+import playIcon from '../assets/icons/playIcon.svg';
 import video1 from '../assets/videos/video1.mp4';
 import video2 from '../assets/videos/video2.mp4';
 import video3 from '../assets/videos/video3.mp4';
@@ -32,11 +33,11 @@ import previewVideo1 from '../assets/videos/previewVideos1.jpg';
 import previewVideo2 from '../assets/videos/previewVideos2.jpg';
 import previewVideo3 from '../assets/videos/previewVideos3.jpg';
 
-export const homemain = {
+export const homeHeader = {
   // header
-  homeHeaderTitle: 'Step into the Spotlight with Pop! Photography',
-  homeHeaderText: 'Where every child shines bright as a star!',
-  homeHeaderImgUrls: [
+  title: 'Step into the Spotlight with Pop! Photography',
+  text: 'Where every child shines bright as a star!',
+  imgUrls: [
     homeHeader1,
     homeHeader2,
     homeHeader3,
@@ -53,7 +54,7 @@ export const homemain = {
     homeHeader14,
     homeHeader15,
   ],
-  homeHeaderSocial: [
+  socialLinks: [
     {
       id: 1,
       name: 'twitter',
@@ -79,11 +80,12 @@ export const homemain = {
       link: 'http://google.com',
     },
   ],
+};
 
-  // why
-  homeSectionWhyTitle1: 'Why Choose',
-  homeSectionWhyTitle2: 'Pop Photography?',
-  homeSectionWhyList: [
+export const homeWhy = {
+  title1: 'Why Choose',
+  title2: 'Pop Photography?',
+  list: [
     {
       id: 1,
       text: 'Decades of Excellence: Over 40 Years Of Crafting stories, not just photos.',
@@ -105,16 +107,19 @@ export const homemain = {
       text: 'Showcase Ready: A vast range of printing and framing options to flaunt your memories.',
     },
   ],
-  homeSectionWhyImgUrls: [homeWhy1, homeWhy2],
+  imgUrls: [homeWhy1, homeWhy2],
+};
 
-  // year
-  homeSectionYearImgUrl: homeYear,
-  homeSectionYearText1: '10',
-  homeSectionYearText2: 'years',
-  homeSectionYearText3: 'of experience',
+export const homeYear = {
+  imgUrl: homeYearImg,
+  text1: '10',
+  text2: 'years',
+  text3: 'of experience',
+};
 
-  // video
-  homeSectionVideoTitle: 'Our Videos',
-  homeSectionVideoPreviewImgUrls: [previewVideo1, previewVideo2, previewVideo3],
-  homeSectionVideoVideosUrls: [video1, video2, video3],
+export const homeVideo = {
+  title: 'Our Videos',
+  previewImgUrls: [previewVideo1, previewVideo2, previewVideo3],
+  videoUrls: [video1, video2, video3],
+  playIcon,
 };

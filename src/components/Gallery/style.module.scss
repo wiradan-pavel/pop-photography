@@ -11,10 +11,11 @@
   color: $black-171;
   padding-bottom: 100px;
   position: relative;
+  z-index: 1;
 
-  &::after {
+  &__line {
     position: absolute;
-    content: url(../../assets/icons/other/line213.svg);
+    z-index: -1;
     bottom: 77px;
     right: 36%;
   }
@@ -23,10 +24,10 @@
 .gallery {
   & img {
     transition: $normal;
+    cursor: pointer;
 
     &:hover {
-      cursor: pointer;
-      filter: brightness(1.2);
+      filter: brightness(1.1);
     }
   }
 }

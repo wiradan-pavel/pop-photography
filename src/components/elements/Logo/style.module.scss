@@ -1,3 +1,13 @@
+@import '../../../styles/var';
+
+.div img {
+  transition: $normal;
+
+  &:hover {
+    transform: scale(1.05);
+  }
+}
+
 .img {
   &__header {
     width: 155px;

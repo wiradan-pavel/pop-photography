@@ -1,6 +1,9 @@
 // logo
 import logo from '../assets/icons/logo.svg';
 
+// arrow
+import arrow from '../assets/icons/arrowWhite.svg';
+
 export const header = {
   logoName: 'logo',
   logoImgUrl: logo,
@@ -37,6 +40,7 @@ export const header = {
       link: '/pricing',
     },
   ],
+  arrow,
   navLinkServices: [
     {
       id: 1,

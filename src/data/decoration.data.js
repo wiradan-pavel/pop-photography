@@ -8,7 +8,6 @@ import dotsWhite72Dec from '../assets/decorations/dotsWhite72Dec.svg';
 import groupPeopleStarsDec from '../assets/decorations/groupPeopleStarsDec.svg';
 import homeHeaderBackground1Dec from '../assets/decorations/homeHeaderBackground1Dec.svg';
 import homeHeaderBackground2Dec from '../assets/decorations/homeHeaderBackground2Dec.svg';
-import homeWhyGradientDec from '../assets/decorations/homeWhyGradientDec.png';
 import homeWhyPurpleDec from '../assets/decorations/homeWhyPurpleDec.png';
 import lineYellow119Dec from '../assets/decorations/lineYellow119Dec.svg';
 import lineYellow213Dec from '../assets/decorations/lineYellow213Dec.svg';
@@ -19,7 +18,7 @@ import spiralYellowDec from '../assets/decorations/spiralYellowDec.svg';
 import waveWhiteDec from '../assets/decorations/waveWhiteDec.svg';
 import youtubePurpleDec from '../assets/decorations/youtubePurpleDec.svg';
 
-export const dec = {
+export {
   bulbYellowDec,
   cameraWhiteDec,
   cameraYellowDec,
@@ -30,7 +29,6 @@ export const dec = {
   groupPeopleStarsDec,
   homeHeaderBackground1Dec,
   homeHeaderBackground2Dec,
-  homeWhyGradientDec,
   homeWhyPurpleDec,
   lineYellow119Dec,
   lineYellow213Dec,

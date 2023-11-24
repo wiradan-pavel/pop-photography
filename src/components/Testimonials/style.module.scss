@@ -7,19 +7,22 @@
   font-size: 62px;
   color: $black-171;
   position: relative;
+  z-index: 1;
 
-  &::after {
+  &__plane,
+  &__line {
     position: absolute;
-    content: url(../../assets/icons/other/line213.svg);
-    right: 41%;
-    bottom: -30px;
+    z-index: -1;
   }
 
-  &::before {
-    position: absolute;
-    content: url(../../assets/icons/other/paperPlane.svg);
+  &__plane {
     left: 47%;
     top: -120px;
+  }
+
+  &__line {
+    right: 41%;
+    bottom: -30px;
   }
 }
 

@@ -6,19 +6,22 @@
   font-weight: 700;
   color: $black-171;
   position: relative;
+  z-index: 1;
 
-  &::after {
+  &__youtube,
+  &__line {
     position: absolute;
-    content: url(../../assets/icons/other/line213.svg);
-    bottom: -35px;
-    left: 135px;
+    z-index: -1;
   }
 
-  &::before {
-    position: absolute;
-    content: url(../../assets/icons/other/youtube.svg);
+  &__youtube {
+    left: 0;
     top: -80px;
-    left: 0px;
+  }
+
+  &__line {
+    bottom: -18px;
+    left: 140px;
   }
 }
 

@@ -1,7 +1,7 @@
-import camera from '../assets/icons/features/camera.svg';
-import mirror from '../assets/icons/features/mirror.svg';
-import book from '../assets/icons/features/book.svg';
-import flapper from '../assets/icons/features/flapper.svg';
+import camera from '../assets/images/features/camera.svg';
+import mirror from '../assets/images/features/mirror.svg';
+import book from '../assets/images/features/book.svg';
+import flapper from '../assets/images/features/flapper.svg';
 
 export const features = {
   title: 'Features/Benefits',
