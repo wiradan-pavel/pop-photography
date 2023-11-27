@@ -1,5 +1,4 @@
 import { Link } from 'react-router-dom';
-import { motion } from 'framer-motion';
 import { Button, Container, Wrapper } from '../elements';
 import { homeHeader } from '../../data/home.data';
 import { homeHeaderBtn } from '../../data/buttons.data';
@@ -20,10 +19,7 @@ export default function HomeHeader() {
     <Wrapper purple>
       <Container>
         <section className={style.div}>
-          <motion.div
-            initial={{ opacity: 0, scale: 0.5 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 1 }}
+          <div
             className={style.div__left}
           >
             <h1 className={style.div__left__title}>
@@ -34,7 +30,7 @@ export default function HomeHeader() {
             <Button>
               <Link to={homeHeaderBtn.link}>{homeHeaderBtn.text}</Link>
             </Button>
-          </motion.div>
+          </div>
           <div className={style.div__right}>
             <div className={style.div__right__imgs}>
               <div className={style.div__right__imgs__back}>
