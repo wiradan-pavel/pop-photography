@@ -6,8 +6,21 @@ import Gallery from './Gallery';
 import Footer from './Footer';
 
 // HOME
-import HomeFeatures from './HomeFeatures';
 import HomeHeader from './HomeHeader';
+import HomeFeatures from './HomeFeatures';
 import HomeVideos from './HomeVideos';
 
-export { Header, Testimonials, Features, HomeHeader, HomeVideos, HomeFeatures, Gallery, Footer };
+// ABOUT
+import AboutHeader from './AboutHeader';
+
+export {
+  Header,
+  Testimonials,
+  Features,
+  HomeHeader,
+  HomeVideos,
+  HomeFeatures,
+  Gallery,
+  Footer,
+  AboutHeader,
+};

@@ -9,8 +9,11 @@ import groupPeopleStarsDec from '../assets/decorations/groupPeopleStarsDec.svg';
 import homeHeaderBackground1Dec from '../assets/decorations/homeHeaderBackground1Dec.svg';
 import homeHeaderBackground2Dec from '../assets/decorations/homeHeaderBackground2Dec.svg';
 import homeWhyPurpleDec from '../assets/decorations/homeWhyPurpleDec.png';
+import lineYellow95Dec from '../assets/decorations/lineYellow95Dec.svg';
 import lineYellow119Dec from '../assets/decorations/lineYellow119Dec.svg';
+import lineYellow164Dec from '../assets/decorations/lineYellow164Dec.svg';
 import lineYellow213Dec from '../assets/decorations/lineYellow213Dec.svg';
+import lineYellow273Dec from '../assets/decorations/lineYellow273Dec.svg';
 import lineYellow298Dec from '../assets/decorations/lineYellow298Dec.svg';
 import planeTurquoiseDec from '../assets/decorations/planeTurquoiseDec.svg';
 import spiralBlackDec from '../assets/decorations/spiralBlackDec.svg';
@@ -30,8 +33,11 @@ export {
   homeHeaderBackground1Dec,
   homeHeaderBackground2Dec,
   homeWhyPurpleDec,
+  lineYellow95Dec,
   lineYellow119Dec,
+  lineYellow164Dec,
   lineYellow213Dec,
+  lineYellow273Dec,
   lineYellow298Dec,
   planeTurquoiseDec,
   spiralBlackDec,

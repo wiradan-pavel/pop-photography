@@ -1,0 +1,63 @@
+@import '../../../styles/var';
+
+.section {
+  height: 400px;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 70px;
+}
+
+.img {
+  margin-right: 100px;
+  position: relative;
+  z-index: 5;
+
+  &::before {
+    content: '';
+    position: absolute;
+    width: 405px;
+    height: 401px;
+    background: linear-gradient(150deg, #fdbe14, #c562bc);
+    top: -18px;
+    right: -22px;
+    border-radius: 0 35px 0 0;
+    z-index: -1;
+  }
+
+  &__spiral {
+    position: absolute;
+    z-index: -2;
+    left: -95px;
+    top: -56px;
+    transform: rotate(180deg);
+  }
+
+  &__wave {
+    position: absolute;
+    z-index: -2;
+    right: -122px;
+    bottom: -20px;
+  }
+
+  &__dots18 {
+    position: absolute;
+    z-index: -2;
+    bottom: 30px;
+    left: -63px;
+  }
+}
+
+.dec {
+  &__camera {
+    position: absolute;
+    z-index: 1;
+    top: 25px;
+    left: 40px;
+  }
+  &__dots72 {
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    bottom: 40px;
+  }
+}

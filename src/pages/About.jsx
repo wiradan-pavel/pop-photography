@@ -1,3 +1,11 @@
+import { AboutHeader, Gallery, Testimonials } from '../components';
+
 export default function About() {
-  return <div>About</div>;
+  return (
+    <>
+      <AboutHeader />
+      {/* <Testimonials /> */}
+      <Gallery />
+    </>
+  );
 }

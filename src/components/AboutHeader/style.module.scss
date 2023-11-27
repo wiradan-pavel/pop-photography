@@ -1,0 +1,29 @@
+@import '../../styles/var';
+
+.title {
+  font-family: $poppins;
+  font-weight: 700;
+  font-size: 52px;
+  color: $white;
+  padding-top: 85px;
+  position: relative;
+  z-index: 2;
+
+  &__line {
+    position: absolute;
+    z-index: 1;
+    left: 10px;
+    top: 51%;
+  }
+
+  &::before {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    height: 75px;
+    width: 367px;
+    background-color: $yellow;
+    right: -10px;
+    bottom: 54%;
+  }
+}
