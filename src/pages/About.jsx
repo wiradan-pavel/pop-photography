@@ -1,4 +1,11 @@
-import { AboutApproach, AboutHeader, AboutStory, Gallery, Testimonials } from '../components';
+import {
+  AboutApproach,
+  AboutHeader,
+  AboutStory,
+  AboutTeam,
+  Gallery,
+  Testimonials,
+} from '../components';
 
 export default function About() {
   return (
@@ -6,6 +13,7 @@ export default function About() {
       <AboutHeader />
       <AboutStory />
       <AboutApproach />
+      <AboutTeam />
       {/* <Testimonials /> */}
       <Gallery />
     </>

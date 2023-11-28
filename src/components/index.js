@@ -14,6 +14,7 @@ import HomeVideos from './HomeVideos';
 import AboutHeader from './AboutHeader';
 import AboutStory from './AboutStory';
 import AboutApproach from './AboutApproach';
+import AboutTeam from './AboutTeam';
 
 export {
   Header,
@@ -27,4 +28,5 @@ export {
   AboutHeader,
   AboutStory,
   AboutApproach,
+  AboutTeam,
 };
