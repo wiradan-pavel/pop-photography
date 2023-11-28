@@ -1,6 +1,7 @@
 import {
   AboutApproach,
   AboutHeader,
+  AboutMission,
   AboutStory,
   AboutTeam,
   Gallery,
@@ -14,6 +15,7 @@ export default function About() {
       <AboutStory />
       <AboutApproach />
       <AboutTeam />
+      <AboutMission />
       {/* <Testimonials /> */}
       <Gallery />
     </>

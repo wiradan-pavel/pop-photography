@@ -15,6 +15,7 @@ import AboutHeader from './AboutHeader';
 import AboutStory from './AboutStory';
 import AboutApproach from './AboutApproach';
 import AboutTeam from './AboutTeam';
+import AboutMission from './AboutMission';
 
 export {
   Header,
@@ -29,4 +30,5 @@ export {
   AboutStory,
   AboutApproach,
   AboutTeam,
+  AboutMission,
 };

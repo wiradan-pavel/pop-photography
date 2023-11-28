@@ -1,0 +1,88 @@
+@import '../../styles/var';
+
+.section {
+  padding-bottom: 120px;
+  font-family: $poppins;
+}
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+
+  &__left {
+    position: relative;
+    min-width: 674px;
+    height: 624px;
+    z-index: 1;
+
+    &::before {
+      position: absolute;
+      content: '';
+      z-index: -1;
+      width: 329px;
+      height: 487px;
+      background: linear-gradient(175deg, #3bb5d7, #fdbe14);
+      bottom: 25px;
+      right: -25px;
+      border-radius: 0 0 35px 0;
+    }
+
+    &__imgLeft,
+    &__imgRight,
+    &__imgDots,
+    &__imgShape {
+      position: absolute;
+      z-index: 2;
+    }
+
+    &__imgLeft {
+      left: 0;
+      bottom: 0;
+    }
+
+    &__imgRight {
+      right: 0;
+      top: 0;
+      border-radius: 0 0 40px 0;
+    }
+
+    &__imgDots {
+      z-index: 3;
+      right: 280px;
+      top: -25px;
+    }
+
+    &__imgShape {
+      z-index: -1;
+      left: -129px;
+      top: -104px;
+      transform: scale(-1, 1);
+    }
+  }
+
+  &__right {
+    max-width: 825px;
+
+    &__title {
+      font-weight: 700;
+      font-size: 65px;
+      color: $black-171;
+      padding-bottom: 32px;
+      position: relative;
+
+      & img {
+        position: absolute;
+        bottom: 25px;
+        left: 54.5%;
+      }
+    }
+
+    &__text {
+      font-size: 22px;
+      color: $grey-898;
+      line-height: 187%;
+    }
+  }
+}
