@@ -1,0 +1,74 @@
+@import '../../styles/var';
+
+.section {
+  padding-bottom: 150px;
+  font-family: $poppins;
+}
+
+.div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &__left {
+    &__title {
+      font-weight: 700;
+      font-size: 65px;
+      line-height: 140%;
+      color: $black-171;
+      position: relative;
+      z-index: 1;
+
+      & img {
+        position: absolute;
+        z-index: -1;
+        left: 0;
+        bottom: 5px;
+      }
+    }
+
+    &__text {
+      padding-top: 50px;
+      max-width: 756px;
+      line-height: 187%;
+      font-size: 22px;
+      color: $grey-898;
+    }
+  }
+
+  &__right {
+    position: relative;
+    z-index: 1;
+
+    &::before {
+      position: absolute;
+      z-index: -1;
+      content: '';
+      background: linear-gradient(185deg, #3bb5d7, #fdbe14);
+      width: 329px;
+      height: 487px;
+      border-radius: 0 0 0 35px;
+      bottom: -36px;
+      left: -26px;
+    }
+
+    &__img {
+      width: 673px;
+      height: 562px;
+    }
+
+    &__dots {
+      position: absolute;
+      z-index: 2;
+      left: 35px;
+      top: -25px;
+    }
+
+    &__figure {
+      position: absolute;
+      z-index: -1;
+      right: -130px;
+      top: -135px;
+    }
+  }
+}

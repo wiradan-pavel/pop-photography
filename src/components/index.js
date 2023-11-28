@@ -13,6 +13,7 @@ import HomeVideos from './HomeVideos';
 // ABOUT
 import AboutHeader from './AboutHeader';
 import AboutStory from './AboutStory';
+import AboutApproach from './AboutApproach';
 
 export {
   Header,
@@ -25,4 +26,5 @@ export {
   Footer,
   AboutHeader,
   AboutStory,
+  AboutApproach,
 };
