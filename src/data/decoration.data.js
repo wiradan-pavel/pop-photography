@@ -15,6 +15,7 @@ import lineYellow164Dec from '../assets/decorations/lineYellow164Dec.svg';
 import lineYellow213Dec from '../assets/decorations/lineYellow213Dec.svg';
 import lineYellow273Dec from '../assets/decorations/lineYellow273Dec.svg';
 import lineYellow298Dec from '../assets/decorations/lineYellow298Dec.svg';
+import lineYellow388Dec from '../assets/decorations/lineYellow388Dec.svg';
 import planeTurquoiseDec from '../assets/decorations/planeTurquoiseDec.svg';
 import spiralBlackDec from '../assets/decorations/spiralBlackDec.svg';
 import spiralYellowDec from '../assets/decorations/spiralYellowDec.svg';
@@ -39,6 +40,7 @@ export {
   lineYellow213Dec,
   lineYellow273Dec,
   lineYellow298Dec,
+  lineYellow388Dec,
   planeTurquoiseDec,
   spiralBlackDec,
   spiralYellowDec,
