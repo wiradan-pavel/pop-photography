@@ -4,6 +4,7 @@ import Features from './Features';
 import Testimonials from './Testimonials';
 import Gallery from './Gallery';
 import Footer from './Footer';
+import Map from './Map';
 
 // HOME
 import HomeHeader from './HomeHeader';
@@ -26,6 +27,7 @@ export {
   HomeFeatures,
   Gallery,
   Footer,
+  Map,
   AboutHeader,
   AboutStory,
   AboutApproach,

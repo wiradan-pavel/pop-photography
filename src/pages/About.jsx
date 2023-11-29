@@ -5,6 +5,7 @@ import {
   AboutStory,
   AboutTeam,
   Gallery,
+  Map,
   Testimonials,
 } from '../components';
 
@@ -16,7 +17,8 @@ export default function About() {
       <AboutApproach />
       <AboutTeam />
       <AboutMission />
-      {/* <Testimonials /> */}
+      <Map />
+      <Testimonials />
       <Gallery />
     </>
   );

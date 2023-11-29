@@ -1,0 +1,35 @@
+@import '../../styles/var';
+
+.section {
+  padding-bottom: 230px;
+}
+
+.title {
+  font-family: $poppins;
+  font-weight: 700;
+  font-size: 62px;
+  text-align: center;
+  color: $black-171;
+  padding-bottom: 85px;
+  position: relative;
+  z-index: 1;
+
+  & img {
+    position: absolute;
+    z-index: -1;
+    bottom: 55px;
+    left: 35%;
+  }
+}
+
+.map {
+  width: 100%;
+  height: 526px;
+  background-color: rgba($color: $black-171, $alpha: 0.1);
+
+  & img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
