@@ -1,6 +1,6 @@
 import { Wrapper, Container } from '../elements';
 import { aboutMission } from '../../data/about.data';
-import { dotsBlack18Dec, homeWhyPurpleDec, lineYellow252Dec } from '../../data/decoration.data';
+import { dotsBlack18Dec, homeWhyPurpleDec, lineYellow252Dec } from '../../data/decoration.img';
 
 import style from './style.module.scss';
 

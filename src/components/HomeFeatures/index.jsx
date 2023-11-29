@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom';
+import { motion } from 'framer-motion';
 import { Button, Container, Wrapper } from '../elements';
 import { homeWhy, homeYear } from '../../data/home.data';
 import { learnMoreBtn } from '../../data/buttons.data';
@@ -9,7 +10,13 @@ import {
   homeWhyPurpleDec,
   lineYellow298Dec,
   spiralBlackDec,
-} from '../../data/decoration.data';
+} from '../../data/decoration.img';
+import {
+  defaultListAnimation,
+  opacityXNegative50ItemAnimation,
+  quicklyListAnimation,
+  scaleXPositive100ItemAnimation,
+} from '../../data/animations.var';
 
 import style from './style.module.scss';
 
@@ -19,57 +26,118 @@ export default function HomeFeatures() {
       <Container>
         {/* why */}
         <section className={style.why}>
-          <div className={style.why__left}>
-            <h2 className={style.why__left__title}>
+          <motion.div
+            variants={defaultListAnimation}
+            initial="hidden"
+            whileInView="show"
+            viewport={{ once: true }}
+            className={style.why__left}
+          >
+            <motion.h2
+              variants={opacityXNegative50ItemAnimation}
+              className={style.why__left__title}
+            >
               {homeWhy.title1}
               <br /> {homeWhy.title2}
               <img className={style.why__left__title__line} src={lineYellow298Dec} alt="" />
-            </h2>
+            </motion.h2>
             <ol className={style.why__left__list}>
               {homeWhy.list.map((item) => (
-                <li key={item.id}>{item.text}</li>
+                <motion.li variants={opacityXNegative50ItemAnimation} key={item.id}>
+                  {item.text}
+                </motion.li>
               ))}
             </ol>
-            <Button>
-              <Link to={learnMoreBtn.link}>{learnMoreBtn.text}</Link>
-            </Button>
-            <img className={style.why__left__spiral} src={spiralBlackDec} alt="" />
-          </div>
-          <div className={style.why__right}>
-            <img
+            <motion.div variants={opacityXNegative50ItemAnimation}>
+              <Button>
+                <Link to={learnMoreBtn.link}>{learnMoreBtn.text}</Link>
+              </Button>
+            </motion.div>
+            <motion.img
+              variants={opacityXNegative50ItemAnimation}
+              className={style.why__left__spiral}
+              src={spiralBlackDec}
+              alt=""
+            />
+          </motion.div>
+          <motion.div
+            variants={quicklyListAnimation}
+            initial="hidden"
+            whileInView="show"
+            viewport={{ once: true }}
+            className={style.why__right}
+          >
+            <motion.img
+              variants={scaleXPositive100ItemAnimation}
               className={style.why__right__photomain__left}
               src={homeWhy.imgUrls[0]}
               alt="photo"
             />
-            <img
+            <motion.img
+              variants={scaleXPositive100ItemAnimation}
               className={style.why__right__photomain__right}
               src={homeWhy.imgUrls[1]}
               alt="photo"
             />
-            <img className={style.why__right__photodec__dots} src={dotsBlack18Dec} alt="" />
-            <img className={style.why__right__photodec__shape} src={homeWhyPurpleDec} alt="" />
-          </div>
+            <motion.img
+              variants={scaleXPositive100ItemAnimation}
+              className={style.why__right__photodec__dots}
+              src={dotsBlack18Dec}
+              alt=""
+            />
+            <motion.img
+              variants={scaleXPositive100ItemAnimation}
+              className={style.why__right__photodec__shape}
+              src={homeWhyPurpleDec}
+              alt=""
+            />
+          </motion.div>
         </section>
         {/* year */}
-        <section className={style.year}>
+        <motion.section
+          variants={quicklyListAnimation}
+          initial="hidden"
+          whileInView="show"
+          viewport={{ once: true }}
+          className={style.year}
+        >
           <div className={style.year__left}>
-            <img src={homeYear.imgUrl} alt="photo" />
+            <motion.img
+              variants={scaleXPositive100ItemAnimation}
+              src={homeYear.imgUrl}
+              alt="photo"
+            />
           </div>
           <div className={style.year__right}>
             <div className={style.year__right__ten}>
-              <p>{homeYear.text1}</p>
-              <img className={style.year__right__ten__dots} src={dotsBlack18Dec} alt="" />
+              <motion.p variants={scaleXPositive100ItemAnimation}>{homeYear.text1}</motion.p>
+              <motion.img
+                variants={scaleXPositive100ItemAnimation}
+                className={style.year__right__ten__dots}
+                src={dotsBlack18Dec}
+                alt=""
+              />
             </div>
             <div className={style.year__right__year}>
-              <p>{homeYear.text2}</p>
-              <img className={style.year__right__year__dec} src={groupPeopleStarsDec} alt="" />
+              <motion.p variants={scaleXPositive100ItemAnimation}>{homeYear.text2}</motion.p>
+              <motion.img
+                variants={scaleXPositive100ItemAnimation}
+                className={style.year__right__year__dec}
+                src={groupPeopleStarsDec}
+                alt=""
+              />
             </div>
             <div className={style.year__right__exp}>
-              <p>{homeYear.text3}</p>
+              <motion.p variants={scaleXPositive100ItemAnimation}>{homeYear.text3}</motion.p>
             </div>
           </div>
-          <img className={style.year__dec} src={circlePinkDec} alt="" />
-        </section>
+          <motion.img
+            variants={scaleXPositive100ItemAnimation}
+            className={style.year__dec}
+            src={circlePinkDec}
+            alt=""
+          />
+        </motion.section>
       </Container>
     </Wrapper>
   );

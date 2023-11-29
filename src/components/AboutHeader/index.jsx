@@ -1,6 +1,6 @@
 import { SectionHeader } from '../elements';
 import { aboutHeader } from '../../data/about.data';
-import { lineYellow164Dec } from '../../data/decoration.data';
+import { lineYellow164Dec } from '../../data/decoration.img';
 
 import style from './style.module.scss';
 

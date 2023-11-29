@@ -1,5 +1,5 @@
 import { map } from '../../data/map.data';
-import { lineYellow416Dec } from '../../data/decoration.data';
+import { lineYellow416Dec } from '../../data/decoration.img';
 
 import style from './style.module.scss';
 

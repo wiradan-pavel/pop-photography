@@ -5,7 +5,7 @@ import {
   spiralYellowDec,
   waveWhiteDec,
   dotsWhite18Dec,
-} from '../../../data/decoration.data';
+} from '../../../data/decoration.img';
 
 import style from './style.module.scss';
 

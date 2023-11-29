@@ -1,15 +1,17 @@
 import { Link } from 'react-router-dom';
+import { motion } from 'framer-motion';
 import { header } from '../../../data/header.data';
+import { headerNavAni, opacityYNegative50ItemAnimation } from '../../../data/animations.var';
 
 import style from './style.module.scss';
 
 export default function Nav() {
   return (
     <nav className={style.nav}>
-      <ul className={style.ul}>
+      <motion.ul variants={headerNavAni} initial="hidden" animate="show" className={style.ul}>
         {/* map nav items */}
         {header.navLinks.map((item) => (
-          <li className={style.li} key={item.id}>
+          <motion.li variants={opacityYNegative50ItemAnimation} className={style.li} key={item.id}>
             <Link className={style.link} to={item.link}>
               {item.name}
               {item.name === 'Services' && <img src={header.arrow} alt="arrow" />}
@@ -26,9 +28,9 @@ export default function Nav() {
                 ))}
               </ul>
             )}
-          </li>
+          </motion.li>
         ))}
-      </ul>
+      </motion.ul>
     </nav>
   );
 }

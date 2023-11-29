@@ -1,6 +1,6 @@
 import { Container, Wrapper } from '../elements';
 import { aboutStory } from '../../data/about.data';
-import { lineYellow388Dec } from '../../data/decoration.data';
+import { lineYellow388Dec } from '../../data/decoration.img';
 
 import style from './style.module.scss';
 

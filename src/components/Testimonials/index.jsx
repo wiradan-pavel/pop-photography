@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom';
 import { Wrapper, Container, Button } from '../elements';
 import { testimonials } from '../../data/testimonials.data';
 import { bookNowBtn } from '../../data/buttons.data';
-import { lineYellow213Dec, planeTurquoiseDec } from '../../data/decoration.data';
+import { lineYellow213Dec, planeTurquoiseDec } from '../../data/decoration.img';
 
 import style from './style.module.scss';
 
