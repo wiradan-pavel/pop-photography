@@ -3,13 +3,7 @@ import { motion } from 'framer-motion';
 import { Wrapper, Container, Button } from '../elements';
 import { testimonials } from '../../data/testimonials.data';
 import { bookNowBtn } from '../../data/buttons.data';
-import {
-  opacityStaggerChildren05Ani,
-  opacityDelayChildren05StaggerChildren05Ani,
-  opacityDuration1Delay05Ani,
-  opacityItemAni,
-  scaleItemAni,
-} from '../../data/animations.var';
+import { normalListAni, upDownItemAni } from '../../data/animations.var';
 import { lineYellow213Dec, planeTurquoiseDec } from '../../data/decoration.img';
 
 import style from './style.module.scss';
@@ -19,36 +13,20 @@ export default function Testimonials() {
     <Wrapper>
       <Container>
         <section>
-          <motion.h2
-            variants={opacityDelayChildren05StaggerChildren05Ani}
-            initial="hidden"
-            whileInView="show"
-            viewport={{ once: true }}
-            className={style.title}
-          >
+          <h2 className={style.title}>
             {testimonials.title}
-            <motion.img
-              variants={opacityItemAni}
-              className={style.title__plane}
-              src={planeTurquoiseDec}
-              alt=""
-            />
-            <motion.img
-              variants={opacityItemAni}
-              className={style.title__line}
-              src={lineYellow213Dec}
-              alt=""
-            />
-          </motion.h2>
+            <img className={style.title__plane} src={planeTurquoiseDec} alt="" />
+            <img className={style.title__line} src={lineYellow213Dec} alt="" />
+          </h2>
           <motion.div
-            variants={opacityStaggerChildren05Ani}
+            variants={normalListAni}
             initial="hidden"
             whileInView="show"
             viewport={{ once: true }}
             className={style.list}
           >
             {testimonials.list.map((item) => (
-              <motion.div variants={scaleItemAni} className={style.list__item} key={item.id}>
+              <motion.div variants={upDownItemAni} className={style.list__item} key={item.id}>
                 <img className={style.list__item__img} src={item.imgUrl} alt="photo" />
                 <p className={style.list__item__text}>{item.text}</p>
                 <div className={style.list__item__bottom}>
@@ -75,17 +53,11 @@ export default function Testimonials() {
               </motion.div>
             ))}
           </motion.div>
-          <motion.div
-            variants={opacityDuration1Delay05Ani}
-            initial="hidden"
-            whileInView="show"
-            viewport={{ once: true }}
-            className={style.button}
-          >
+          <div className={style.button}>
             <Button>
               <Link to={bookNowBtn.link}>{bookNowBtn.text}</Link>
             </Button>
-          </motion.div>
+          </div>
         </section>
       </Container>
     </Wrapper>

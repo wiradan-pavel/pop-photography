@@ -1,6 +1,5 @@
 import { motion } from 'framer-motion';
 import { Wrapper, Container } from '../index';
-import { opacityStaggerChildren05Ani, scaleItemAni } from '../../../data/animations.var';
 import {
   cameraWhiteDec,
   dotsWhite72Dec,
@@ -8,6 +7,7 @@ import {
   waveWhiteDec,
   dotsWhite18Dec,
 } from '../../../data/decoration.img';
+import { normalListAni, scaleItemAni } from '../../../data/animations.var';
 
 import style from './style.module.scss';
 
@@ -19,12 +19,12 @@ export default function SectionHeader({ imgUrl, children }) {
           <div className={style.section}>
             {children}
             <motion.div
-              variants={opacityStaggerChildren05Ani}
+              variants={normalListAni}
               initial="hidden"
               animate="show"
               className={style.img}
             >
-              <motion.img variants={scaleItemAni} src={imgUrl} alt="" />
+              <img src={imgUrl} alt="" />
               <motion.img
                 variants={scaleItemAni}
                 className={style.img__spiral}

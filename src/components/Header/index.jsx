@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { Button, Container, Logo, Nav, Wrapper } from '../elements';
 import { bookNowBtn } from '../../data/buttons.data';
-import { opacityYNegative50Duration05Delay17Ani } from '../../data/animations.var';
+import { upDownItemAni } from '../../data/animations.var';
 
 import style from './style.module.scss';
 
@@ -11,22 +11,21 @@ export default function Header() {
     <Wrapper purple>
       <Container>
         <div>
-          <header className={style.header}>
+          <motion.header
+            variants={upDownItemAni}
+            initial="hidden"
+            animate="show"
+            className={style.header}
+          >
             <Logo top />
             <div className={style.div}>
               <Nav />
 
-              <motion.div
-                variants={opacityYNegative50Duration05Delay17Ani}
-                initial="hidden"
-                animate="show"
-              >
-                <Button>
-                  <Link to={bookNowBtn.link}>{bookNowBtn.text}</Link>
-                </Button>
-              </motion.div>
+              <Button>
+                <Link to={bookNowBtn.link}>{bookNowBtn.text}</Link>
+              </Button>
             </div>
-          </header>
+          </motion.header>
         </div>
       </Container>
     </Wrapper>

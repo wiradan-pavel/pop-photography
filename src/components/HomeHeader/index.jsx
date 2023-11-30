@@ -12,17 +12,7 @@ import {
   spiralYellowDec,
   lineYellow119Dec,
 } from '../../data/decoration.img';
-import {
-  opacityStaggerChildren05Ani,
-  opacityDelayChildren05StaggerChildren007Ani,
-  opacityDelayChildren1StaggerChildren05Ani,
-  opacityXNegative100ItemAni,
-  scaleItemAni,
-  opacityItemAni,
-  opacityDuration1Delay05Ani,
-  opacityDuration1Delay3Ani,
-  scaleDuration1Delay05Ani,
-} from '../../data/animations.var';
+import { scaleItemAni, quicklyListAni } from '../../data/animations.var';
 
 import style from './style.module.scss';
 
@@ -31,25 +21,18 @@ export default function HomeHeader() {
     <Wrapper purple>
       <Container>
         <section className={style.div}>
-          <motion.div
-            variants={opacityStaggerChildren05Ani}
-            initial="hidden"
-            animate="show"
-            className={style.div__left}
-          >
-            <motion.h1 variants={opacityXNegative100ItemAni} className={style.div__left__title}>
+          <div className={style.div__left}>
+            <h1 className={style.div__left__title}>
               {homeHeader.title}
               <img src={lineYellow119Dec} alt="" />
-            </motion.h1>
-            <motion.p variants={opacityXNegative100ItemAni} className={style.div__left__text}>
-              {homeHeader.text}
-            </motion.p>
-            <motion.div variants={opacityXNegative100ItemAni}>
+            </h1>
+            <p className={style.div__left__text}>{homeHeader.text}</p>
+            <div>
               <Button>
                 <Link to={homeHeaderBtn.link}>{homeHeaderBtn.text}</Link>
               </Button>
-            </motion.div>
-          </motion.div>
+            </div>
+          </div>
           <div className={style.div__right}>
             <div className={style.div__right__imgs}>
               <div className={style.div__right__imgs__back}>
@@ -57,7 +40,7 @@ export default function HomeHeader() {
                 <img src={homeHeaderBackground2Dec} alt="" />
               </div>
               <motion.div
-                variants={opacityDelayChildren05StaggerChildren007Ani}
+                variants={quicklyListAni}
                 initial="hidden"
                 animate="show"
                 className={style.div__right__imgs__front}
@@ -73,68 +56,25 @@ export default function HomeHeader() {
               </motion.div>
             </div>
             <div className={style.div__right__social}>
-              <motion.div
-                variants={opacityDuration1Delay05Ani}
-                initial="hidden"
-                animate="show"
-                className={style.div__right__social__line}
-              ></motion.div>
-              <motion.ul
-                variants={opacityDelayChildren1StaggerChildren05Ani}
-                initial="hidden"
-                animate="show"
-                className={style.div__right__social__list}
-              >
+              <div className={style.div__right__social__line}></div>
+              <ul className={style.div__right__social__list}>
                 {homeHeader.socialLinks.map((item) => (
-                  <motion.li variants={opacityItemAni} key={item.id}>
+                  <li key={item.id}>
                     <Link to={item.link}>
                       <img src={item.imgUrl} alt={item.name} />
                     </Link>
-                  </motion.li>
+                  </li>
                 ))}
-              </motion.ul>
-              <motion.div
-                variants={opacityDuration1Delay3Ani}
-                initial="hidden"
-                animate="show"
-                className={style.div__right__social__line}
-              ></motion.div>
+              </ul>
+              <div className={style.div__right__social__line}></div>
             </div>
           </div>
         </section>
-        <motion.img
-          variants={scaleDuration1Delay05Ani}
-          initial="hidden"
-          animate="show"
-          className={style.camera}
-          src={cameraWhiteDec}
-          alt=""
-        />
-        <motion.img
-          variants={scaleDuration1Delay05Ani}
-          initial="hidden"
-          animate="show"
-          className={style.spiral}
-          src={spiralYellowDec}
-          alt=""
-        />
+        <img className={style.camera} src={cameraWhiteDec} alt="" />
+        <img className={style.spiral} src={spiralYellowDec} alt="" />
       </Container>
-      <motion.img
-        variants={scaleDuration1Delay05Ani}
-        initial="hidden"
-        animate="show"
-        className={style.wave}
-        src={waveWhiteDec}
-        alt=""
-      />
-      <motion.img
-        variants={scaleDuration1Delay05Ani}
-        initial="hidden"
-        animate="show"
-        className={style.dots}
-        src={dotsWhite72Dec}
-        alt=""
-      />
+      <img className={style.wave} src={waveWhiteDec} alt="" />
+      <img className={style.dots} src={dotsWhite72Dec} alt="" />
     </Wrapper>
   );
 }

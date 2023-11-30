@@ -1,25 +1,15 @@
 import { Link } from 'react-router-dom';
-import { motion } from 'framer-motion';
 import { header } from '../../../data/header.data';
-import {
-  opacityDelayChildren05StaggerChildren02Ani,
-  opacityYNegative50ItemAni,
-} from '../../../data/animations.var';
 
 import style from './style.module.scss';
 
 export default function Nav() {
   return (
     <nav className={style.nav}>
-      <motion.ul
-        variants={opacityDelayChildren05StaggerChildren02Ani}
-        initial="hidden"
-        animate="show"
-        className={style.ul}
-      >
+      <ul className={style.ul}>
         {/* map nav items */}
         {header.navLinks.map((item) => (
-          <motion.li variants={opacityYNegative50ItemAni} className={style.li} key={item.id}>
+          <li className={style.li} key={item.id}>
             <Link className={style.link} to={item.link}>
               {item.name}
               {item.name === 'Services' && <img src={header.arrow} alt="arrow" />}
@@ -36,9 +26,9 @@ export default function Nav() {
                 ))}
               </ul>
             )}
-          </motion.li>
+          </li>
         ))}
-      </motion.ul>
+      </ul>
     </nav>
   );
 }

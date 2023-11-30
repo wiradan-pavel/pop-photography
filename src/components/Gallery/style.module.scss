@@ -23,11 +23,12 @@
 
 .gallery {
   & img {
-    transition: $normal;
     cursor: pointer;
+    transition: $normal;
 
     &:hover {
       filter: brightness(1.1);
+      transform: scale(1.02);
     }
   }
 }

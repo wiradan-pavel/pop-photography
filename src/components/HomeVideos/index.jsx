@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 import { Wrapper, Container } from '../elements';
 import { homeVideo } from '../../data/home.data';
 import { lineYellow213Dec, youtubePurpleDec } from '../../data/decoration.img';
-import { opacityStaggerChildren05Ani, opacityItemAni } from '../../data/animations.var';
+import { normalListAni, scaleItemAni } from '../../data/animations.var';
 
 import style from './style.module.scss';
 
@@ -11,19 +11,20 @@ export default function HomeVideos() {
   return (
     <Wrapper>
       <Container>
-        <motion.section
-          variants={opacityStaggerChildren05Ani}
-          initial="hidden"
-          whileInView="show"
-          viewport={{ once: true }}
-        >
-          <motion.h2 variants={opacityItemAni} className={style.title}>
+        <section>
+          <h2 className={style.title}>
             {homeVideo.title}
             <img className={style.title__youtube} src={youtubePurpleDec} alt="" />
             <img className={style.title__line} src={lineYellow213Dec} alt="" />
-          </motion.h2>
-          <div className={style.grid}>
-            <motion.div variants={opacityItemAni} className={style.grid__video}>
+          </h2>
+          <motion.div
+            variants={normalListAni}
+            initial="hidden"
+            whileInView="show"
+            viewport={{ once: true }}
+            className={style.grid}
+          >
+            <motion.div variants={scaleItemAni} className={style.grid__video}>
               <ReactPlayer
                 width="1030px"
                 height="870px"
@@ -42,7 +43,7 @@ export default function HomeVideos() {
                 }
               />
             </motion.div>
-            <motion.div variants={opacityItemAni} className={style.grid__video}>
+            <motion.div variants={scaleItemAni} className={style.grid__video}>
               <ReactPlayer
                 width="520px"
                 height="415px"
@@ -61,7 +62,7 @@ export default function HomeVideos() {
                 }
               />
             </motion.div>
-            <motion.div variants={opacityItemAni} className={style.grid__video}>
+            <motion.div variants={scaleItemAni} className={style.grid__video}>
               <ReactPlayer
                 width="520px"
                 height="415px"
@@ -80,8 +81,8 @@ export default function HomeVideos() {
                 }
               />
             </motion.div>
-          </div>
-        </motion.section>
+          </motion.div>
+        </section>
       </Container>
     </Wrapper>
   );

@@ -2,31 +2,28 @@ import { motion } from 'framer-motion';
 import { Container, Wrapper } from '../elements';
 import { aboutStory } from '../../data/about.data';
 import { lineYellow388Dec } from '../../data/decoration.img';
+import { normalListAni, upDownItemAni } from '../../data/animations.var';
 
 import style from './style.module.scss';
-import {
-  opacityDelayChildren05StaggerChildren05Ani,
-  opacityItemAni,
-} from '../../data/animations.var';
 
 export default function AboutStory() {
   return (
     <Wrapper>
       <Container>
-        <motion.section
-          variants={opacityDelayChildren05StaggerChildren05Ani}
-          initial="hidden"
-          whileInView="show"
-          viewport={{ once: true }}
-          className={style.section}
-        >
-          <motion.h2 variants={opacityItemAni} className={style.title}>
+        <section className={style.section}>
+          <h2 className={style.title}>
             {aboutStory.title}
             <img src={lineYellow388Dec} alt="" />
-          </motion.h2>
-          <div className={style.list}>
+          </h2>
+          <motion.div
+            variants={normalListAni}
+            initial="hidden"
+            whileInView="show"
+            viewport={{ once: true }}
+            className={style.list}
+          >
             {aboutStory.cards.map((item) => (
-              <motion.div variants={opacityItemAni} className={style.list__item} key={item.id}>
+              <motion.div variants={upDownItemAni} className={style.list__item} key={item.id}>
                 <div className={style.list__item__img}>
                   <img src={item.imgUrl} alt="" />
                 </div>
@@ -34,8 +31,8 @@ export default function AboutStory() {
                 <p className={style.list__item__text}>{item.text}</p>
               </motion.div>
             ))}
-          </div>
-        </motion.section>
+          </motion.div>
+        </section>
       </Container>
     </Wrapper>
   );
