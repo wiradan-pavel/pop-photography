@@ -1,4 +1,6 @@
+import { motion } from 'framer-motion';
 import { Wrapper, Container } from '../index';
+import { opacityStaggerChildren05Ani, scaleItemAni } from '../../../data/animations.var';
 import {
   cameraWhiteDec,
   dotsWhite72Dec,
@@ -16,12 +18,32 @@ export default function SectionHeader({ imgUrl, children }) {
         <Container>
           <div className={style.section}>
             {children}
-            <div className={style.img}>
-              <img src={imgUrl} alt="" />
-              <img className={style.img__spiral} src={spiralYellowDec} alt="" />
-              <img className={style.img__wave} src={waveWhiteDec} alt="" />
-              <img className={style.img__dots18} src={dotsWhite18Dec} alt="" />
-            </div>
+            <motion.div
+              variants={opacityStaggerChildren05Ani}
+              initial="hidden"
+              animate="show"
+              className={style.img}
+            >
+              <motion.img variants={scaleItemAni} src={imgUrl} alt="" />
+              <motion.img
+                variants={scaleItemAni}
+                className={style.img__spiral}
+                src={spiralYellowDec}
+                alt=""
+              />
+              <motion.img
+                variants={scaleItemAni}
+                className={style.img__wave}
+                src={waveWhiteDec}
+                alt=""
+              />
+              <motion.img
+                variants={scaleItemAni}
+                className={style.img__dots18}
+                src={dotsWhite18Dec}
+                alt=""
+              />
+            </motion.div>
           </div>
         </Container>
         <img className={style.dec__camera} src={cameraWhiteDec} alt="" />

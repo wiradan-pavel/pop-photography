@@ -1,6 +1,12 @@
+import { motion } from 'framer-motion';
 import { Container, Wrapper } from '../elements';
 import { aboutTeam } from '../../data/about.data';
 import { lineYellow388Dec } from '../../data/decoration.img';
+import {
+  opacityItemAni,
+  opacityStaggerChildren03Ani,
+  opacityXNegative100ItemAni,
+} from '../../data/animations.var';
 
 import style from './style.module.scss';
 
@@ -8,25 +14,33 @@ export default function AboutTeam() {
   return (
     <Wrapper>
       <Container>
-        <section className={style.section}>
-          <h2 className={style.title}>
+        <motion.section
+          variants={opacityStaggerChildren03Ani}
+          initial="hidden"
+          whileInView="show"
+          viewport={{ once: true }}
+          className={style.section}
+        >
+          <motion.h2 variants={opacityXNegative100ItemAni} className={style.title}>
             {aboutTeam.title}
             <img src={lineYellow388Dec} alt="" />
-          </h2>
-          <p className={style.text}>{aboutTeam.text}</p>
+          </motion.h2>
+          <motion.p variants={opacityXNegative100ItemAni} className={style.text}>
+            {aboutTeam.text}
+          </motion.p>
           <div className={style.list}>
             {aboutTeam.cards.map((item) => (
-              <div className={style.list__item} key={item.id}>
+              <motion.div variants={opacityItemAni} className={style.list__item} key={item.id}>
                 <div className={style.list__item__img}>
                   <img src={item.imgUrl} alt="" />
                 </div>
                 <p className={style.list__item__name}>{item.name}</p>
                 <p className={style.list__item__who}>{item.who}</p>
                 <p className={style.list__item__desc}>{item.desc}</p>
-              </div>
+              </motion.div>
             ))}
           </div>
-        </section>
+        </motion.section>
       </Container>
     </Wrapper>
   );
