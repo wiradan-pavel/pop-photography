@@ -1,6 +1,11 @@
 import { Link } from 'react-router-dom';
+import { motion } from 'framer-motion';
 import { Container, Logo, Wrapper } from '../elements';
 import { footer } from '../../data/footer.data';
+import {
+  opacityDelayChildren05StaggerChildren02Ani,
+  opacityYNegative50ItemAni,
+} from '../../data/animations.var';
 
 import style from './style.module.scss';
 
@@ -8,28 +13,44 @@ export default function Footer() {
   return (
     <Wrapper purple>
       <Container>
-        <footer className={style.footer}>
+        <motion.footer
+          variants={opacityDelayChildren05StaggerChildren02Ani}
+          initial="hidden"
+          whileInView="show"
+          viewport={{ once: true }}
+          className={style.footer}
+        >
           <div className={style.content}>
             <div>
               <Logo />
-              <p className={style.content__text}>{footer.text}</p>
+              <motion.p variants={opacityYNegative50ItemAni} className={style.content__text}>
+                {footer.text}
+              </motion.p>
             </div>
 
             <div>
-              <h4 className={style.content__title}>{footer.quickLinksTitle}</h4>
+              <motion.h4 variants={opacityYNegative50ItemAni} className={style.content__title}>
+                {footer.quickLinksTitle}
+              </motion.h4>
               <ul className={style.content__quickLinks}>
                 {footer.quickLinks.map((item) => (
-                  <li key={item.id}>
+                  <motion.li variants={opacityYNegative50ItemAni} key={item.id}>
                     <Link to={item.link}>{item.text}</Link>
-                  </li>
+                  </motion.li>
                 ))}
               </ul>
             </div>
 
             <div>
-              <h4 className={style.content__title}>{footer.contactTitle}</h4>
+              <motion.h4 variants={opacityYNegative50ItemAni} className={style.content__title}>
+                {footer.contactTitle}
+              </motion.h4>
               {footer.contacts.map((item) => (
-                <div className={style.content__contacts} key={item.id}>
+                <motion.div
+                  variants={opacityYNegative50ItemAni}
+                  className={style.content__contacts}
+                  key={item.id}
+                >
                   <a href={item.link}>
                     <img src={item.imgUrl} alt={item.name} />
                   </a>
@@ -39,25 +60,29 @@ export default function Footer() {
                       <p>{item.text}</p>
                     </a>
                   </div>
-                </div>
+                </motion.div>
               ))}
             </div>
 
             <div>
-              <h4 className={style.content__title}>{footer.socialLinksTitle}</h4>
+              <motion.h4 variants={opacityYNegative50ItemAni} className={style.content__title}>
+                {footer.socialLinksTitle}
+              </motion.h4>
               <ul className={style.content__social}>
                 {footer.socialLinks.map((item) => (
-                  <li key={item.id}>
+                  <motion.li variants={opacityYNegative50ItemAni} key={item.id}>
                     <Link to={item.link}>
                       <img src={item.imgUrl} alt={item.name} />
                     </Link>
-                  </li>
+                  </motion.li>
                 ))}
               </ul>
             </div>
           </div>
-          <p className={style.copy}>{footer.copyrightTitle}</p>
-        </footer>
+          <motion.p variants={opacityYNegative50ItemAni} className={style.copy}>
+            {footer.copyrightTitle}
+          </motion.p>
+        </motion.footer>
       </Container>
     </Wrapper>
   );

@@ -1,14 +1,14 @@
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { header } from '../../../data/header.data';
-import { logoAni } from '../../../data/animations.var';
+import { opacityYNegative50Duration05Ani } from '../../../data/animations.var';
 
 import style from './style.module.scss';
 
 export default function Logo({ top }) {
   return (
     <motion.div
-      variants={logoAni}
+      variants={opacityYNegative50Duration05Ani}
       initial="hidden"
       whileInView="show"
       viewport={{ once: true }}
