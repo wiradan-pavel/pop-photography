@@ -1,6 +1,5 @@
 import ReactPlayer from 'react-player';
 import { motion } from 'framer-motion';
-import { Wrapper, Container } from '../elements';
 import { homeVideo } from '../../data/home.data';
 import { lineYellow213Dec, youtubePurpleDec } from '../../data/decoration.img';
 import { normalListAni, scaleItemAni } from '../../data/animations.var';
@@ -9,14 +8,14 @@ import style from './style.module.scss';
 
 export default function HomeVideos() {
   return (
-    <Wrapper>
-      <Container>
+    <div className={style.wrapperWhite}>
+      <div className={style.container}>
         <section>
-          <h2 className={style.title}>
+          <h4 className={style.title}>
             {homeVideo.title}
             <img className={style.title__youtube} src={youtubePurpleDec} alt="" />
             <img className={style.title__line} src={lineYellow213Dec} alt="" />
-          </h2>
+          </h4>
           <motion.div
             variants={normalListAni}
             initial="hidden"
@@ -83,7 +82,7 @@ export default function HomeVideos() {
             </motion.div>
           </motion.div>
         </section>
-      </Container>
-    </Wrapper>
+      </div>
+    </div>
   );
 }

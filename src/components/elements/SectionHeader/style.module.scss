@@ -1,4 +1,4 @@
-@import '../../../styles/var';
+@import '../../../styles/common';
 
 .section {
   height: 400px;
@@ -24,39 +24,42 @@
     z-index: -1;
   }
 
-  &__spiral {
+  &__spiral,
+  &__wave,
+  &__dots18 {
     position: absolute;
     z-index: -2;
+  }
+
+  &__spiral {
     left: -95px;
     top: -56px;
     transform: rotate(180deg);
   }
 
   &__wave {
-    position: absolute;
-    z-index: -2;
     right: -122px;
     bottom: -20px;
   }
 
   &__dots18 {
-    position: absolute;
-    z-index: -2;
     bottom: 30px;
     left: -63px;
   }
 }
 
 .dec {
-  &__camera {
+  &__camera,
+  &__dots72 {
     position: absolute;
     z-index: 1;
+  }
+
+  &__camera {
     top: 25px;
     left: 40px;
   }
   &__dots72 {
-    position: absolute;
-    z-index: 1;
     left: 0;
     bottom: 40px;
   }

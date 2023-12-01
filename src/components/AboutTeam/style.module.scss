@@ -1,15 +1,12 @@
-@import '../../styles/var';
+@import '../../styles/common';
 
 .section {
-  font-family: $poppins;
   color: $black-171;
 }
 
 .title {
   display: flex;
   justify-content: center;
-  font-size: 62px;
-  font-weight: 700;
   position: relative;
   z-index: 1;
 
@@ -25,7 +22,6 @@
   text-align: center;
   max-width: 1170px;
   font-size: 18px;
-  color: $grey-898;
   line-height: 140%;
   padding: 70px 0 90px;
 }

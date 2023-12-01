@@ -1,49 +1,57 @@
-@import '../../styles/var';
+@import '../../styles/common';
+
+.titleHeader {
+  max-width: 616px;
+  line-height: 160%;
+  position: relative;
+  z-index: 1;
+
+  & img {
+    position: absolute;
+    left: 0;
+    top: 40%;
+    z-index: -1;
+  }
+
+  &::before {
+    content: '';
+    position: absolute;
+    width: 80%;
+    height: 75px;
+    background-color: $yellow;
+    bottom: 3px;
+    right: 0;
+    z-index: -1;
+  }
+}
 
 .div {
-  height: 100vh;
+  height: 800px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   position: relative;
   z-index: 10;
 
+  @media (max-width: $res1400) {
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 1300px;
+  }
+
   &__left {
-    &__title {
-      color: $white;
-      font-family: $poppins;
-      font-weight: 700;
-      font-size: 52px;
-      max-width: 616px;
-      line-height: 160%;
-      position: relative;
-      z-index: 1;
-
-      & img {
-        position: absolute;
-        left: 0;
-        top: 40%;
-        z-index: -1;
-      }
-
-      &::before {
-        content: '';
-        position: absolute;
-        width: 80%;
-        height: 75px;
-        background-color: $yellow;
-        bottom: 3px;
-        right: 0;
-        z-index: -1;
-      }
-    }
-
     &__text {
       color: $white-fdf;
-      font-family: $poppins;
       font-weight: 500;
       font-size: 30px;
       padding: 40px 0;
+    }
+
+    &__btn {
+      @media (max-width: $res1400) {
+        display: flex;
+        justify-content: center;
+      }
     }
   }
 
@@ -51,6 +59,11 @@
     display: flex;
     gap: 60px;
     align-items: center;
+
+    @media (max-width: $res1400) {
+      flex-direction: column;
+      gap: 10px;
+    }
 
     &__imgs {
       width: 636px;
@@ -171,11 +184,21 @@
       gap: 25px;
       align-items: center;
 
+      @media (max-width: $res1400) {
+        flex-direction: row;
+        gap: 5px;
+      }
+
       &__line {
         height: 120px;
         background-color: $white;
         width: 2px;
         border-radius: 3px;
+
+        @media (max-width: $res1400) {
+          transform: rotate(90deg);
+          margin: 0 70px;
+        }
       }
 
       &__list {
@@ -183,6 +206,10 @@
         flex-direction: column;
         align-items: center;
         gap: 40px;
+
+        @media (max-width: $res1400) {
+          flex-direction: row;
+        }
 
         & li {
           transition: $normal;
@@ -202,6 +229,10 @@
 .spiral {
   position: absolute;
   z-index: 1;
+
+  @media (max-width: $res768) {
+    display: none;
+  }
 }
 
 .wave {

@@ -14,11 +14,9 @@
 
 .img {
   &__header {
-    width: 155px;
-    height: 75px;
+    width: clamp(7.5rem, 6.705rem + 3.98vw, 9.688rem);
   }
   &__footer {
-    width: 185px;
-    height: 85px;
+    width: clamp(7.5rem, 6.023rem + 7.39vw, 11.563rem);
   }
 }

@@ -1,6 +1,5 @@
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
-import { Button, Container, Wrapper } from '../elements';
 import { homeHeader } from '../../data/home.data';
 import { homeHeaderBtn } from '../../data/buttons.data';
 import {
@@ -18,19 +17,19 @@ import style from './style.module.scss';
 
 export default function HomeHeader() {
   return (
-    <Wrapper purple>
-      <Container>
+    <div className={style.wrapperPurple}>
+      <div className={style.container}>
         <section className={style.div}>
           <div className={style.div__left}>
-            <h1 className={style.div__left__title}>
+            <h1 className={style.titleHeader}>
               {homeHeader.title}
               <img src={lineYellow119Dec} alt="" />
             </h1>
             <p className={style.div__left__text}>{homeHeader.text}</p>
-            <div>
-              <Button>
+            <div className={style.div__left__btn}>
+              <button className={style.btn}>
                 <Link to={homeHeaderBtn.link}>{homeHeaderBtn.text}</Link>
-              </Button>
+              </button>
             </div>
           </div>
           <div className={style.div__right}>
@@ -72,9 +71,9 @@ export default function HomeHeader() {
         </section>
         <img className={style.camera} src={cameraWhiteDec} alt="" />
         <img className={style.spiral} src={spiralYellowDec} alt="" />
-      </Container>
+      </div>
       <img className={style.wave} src={waveWhiteDec} alt="" />
       <img className={style.dots} src={dotsWhite72Dec} alt="" />
-    </Wrapper>
+    </div>
   );
 }

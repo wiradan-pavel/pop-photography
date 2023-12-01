@@ -1,14 +1,10 @@
-@import '../../styles/var';
+@import '../../styles/common';
 
 .title {
-  font-size: 65px;
   display: flex;
   justify-content: center;
   gap: 20px;
   align-items: center;
-  font-family: $poppins;
-  font-weight: 700;
-  color: $black-171;
   padding-bottom: 100px;
   position: relative;
   z-index: 1;

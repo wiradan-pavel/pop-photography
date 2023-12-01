@@ -1,6 +1,5 @@
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
-import { Wrapper, Container, Button } from '../elements';
 import { testimonials } from '../../data/testimonials.data';
 import { bookNowBtn } from '../../data/buttons.data';
 import { normalListAni, upDownItemAni } from '../../data/animations.var';
@@ -10,14 +9,14 @@ import style from './style.module.scss';
 
 export default function Testimonials() {
   return (
-    <Wrapper>
-      <Container>
+    <div className={style.wrapperWhite}>
+      <div className={style.container}>
         <section>
-          <h2 className={style.title}>
+          <h4 className={style.title}>
             {testimonials.title}
             <img className={style.title__plane} src={planeTurquoiseDec} alt="" />
             <img className={style.title__line} src={lineYellow213Dec} alt="" />
-          </h2>
+          </h4>
           <motion.div
             variants={normalListAni}
             initial="hidden"
@@ -54,12 +53,12 @@ export default function Testimonials() {
             ))}
           </motion.div>
           <div className={style.button}>
-            <Button>
+            <button className={style.btn}>
               <Link to={bookNowBtn.link}>{bookNowBtn.text}</Link>
-            </Button>
+            </button>
           </div>
         </section>
-      </Container>
-    </Wrapper>
+      </div>
+    </div>
   );
 }

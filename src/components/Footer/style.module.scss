@@ -1,8 +1,7 @@
-@import '../../styles/var';
+@import '../../styles/common';
 
 .footer {
   color: $white;
-  font-family: $poppins;
 }
 
 .content {
@@ -12,7 +11,6 @@
   align-items: start;
 
   &__text {
-    font-weight: 400;
     font-size: 12px;
     line-height: 250%;
     padding-top: 30px;
@@ -32,7 +30,6 @@
     font-weight: 500;
     font-size: 14px;
     color: $white-fdf;
-    font-family: $poppins;
 
     & li a {
       border-bottom: 1px solid transparent;
@@ -63,7 +60,6 @@
 
     &__name {
       font-family: $lato;
-      font-weight: 400;
       font-size: 16px;
       padding-bottom: 7px;
     }

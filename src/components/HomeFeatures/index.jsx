@@ -1,6 +1,5 @@
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
-import { Button, Container, Wrapper } from '../elements';
 import { homeWhy, homeYear } from '../../data/home.data';
 import { learnMoreBtn } from '../../data/buttons.data';
 import {
@@ -22,8 +21,8 @@ import style from './style.module.scss';
 
 export default function HomeFeatures() {
   return (
-    <Wrapper>
-      <Container>
+    <div className={style.wrapperWhite}>
+      <div className={style.container}>
         {/* why */}
         <section className={style.why}>
           <motion.div
@@ -33,11 +32,11 @@ export default function HomeFeatures() {
             viewport={{ once: true }}
             className={style.why__left}
           >
-            <motion.h2 variants={leftRightItemAni} className={style.why__left__title}>
+            <motion.h4 variants={leftRightItemAni} className={style.title}>
               {homeWhy.title1}
               <br /> {homeWhy.title2}
-              <img className={style.why__left__title__line} src={lineYellow298Dec} alt="" />
-            </motion.h2>
+              <img className={style.title__line} src={lineYellow298Dec} alt="" />
+            </motion.h4>
             <ol className={style.why__left__list}>
               {homeWhy.list.map((item) => (
                 <motion.li variants={leftRightItemAni} key={item.id}>
@@ -45,9 +44,9 @@ export default function HomeFeatures() {
                 </motion.li>
               ))}
             </ol>
-            <Button>
+            <button className={style.btn}>
               <Link to={learnMoreBtn.link}>{learnMoreBtn.text}</Link>
-            </Button>
+            </button>
             <motion.img
               variants={scaleItemAni}
               className={style.why__left__spiral}
@@ -66,13 +65,13 @@ export default function HomeFeatures() {
               variants={opacityItemAni}
               className={style.why__right__photomain__left}
               src={homeWhy.imgUrls[0]}
-              alt="photo"
+              alt=""
             />
             <motion.img
               variants={opacityItemAni}
               className={style.why__right__photomain__right}
               src={homeWhy.imgUrls[1]}
-              alt="photo"
+              alt=""
             />
             <motion.img
               variants={opacityItemAni}
@@ -129,7 +128,7 @@ export default function HomeFeatures() {
             alt=""
           />
         </motion.section>
-      </Container>
-    </Wrapper>
+      </div>
+    </div>
   );
 }

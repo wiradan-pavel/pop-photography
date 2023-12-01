@@ -1,4 +1,18 @@
-@import '../../styles/var';
+@import '../../styles/common';
+
+.title {
+  line-height: 130%;
+  max-width: 620px;
+  position: relative;
+  z-index: 1;
+
+  &__line {
+    position: absolute;
+    z-index: -1;
+    bottom: -20px;
+    right: 10px;
+  }
+}
 
 .why {
   display: flex;
@@ -17,23 +31,6 @@
       bottom: -40px;
     }
 
-    &__title {
-      font-size: 65px;
-      color: $black-171;
-      font-family: $poppins;
-      font-weight: 700;
-      line-height: 130%;
-      max-width: 620px;
-      position: relative;
-      z-index: 1;
-
-      &__line {
-        position: absolute;
-        z-index: -1;
-        bottom: -20px;
-        right: 10px;
-      }
-    }
     &__list {
       list-style: disc;
       color: $grey-898;

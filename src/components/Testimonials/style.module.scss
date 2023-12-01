@@ -1,11 +1,7 @@
-@import '../../styles/var';
+@import '../../styles/common';
 
 .title {
   text-align: center;
-  font-weight: 700;
-  font-family: $poppins;
-  font-size: 62px;
-  color: $black-171;
   position: relative;
   z-index: 1;
 

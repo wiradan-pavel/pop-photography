@@ -1,6 +1,5 @@
 import { useNavigate } from 'react-router-dom';
 import PhotoAlbum from 'react-photo-album';
-import { Container, Wrapper } from '../elements';
 import { gallery } from '../../data/gallery.data';
 import { cameraYellowDec, lineYellow213Dec } from '../../data/decoration.img';
 
@@ -10,15 +9,15 @@ export default function Gallery() {
   const navigate = useNavigate();
 
   return (
-    <Wrapper>
+    <div className={style.wrapperWhite}>
       <section>
-        <Container>
-          <h2 className={style.title}>
+        <div className={style.container}>
+          <h4 className={style.title}>
             <img src={cameraYellowDec} alt="" />
             {gallery.title}
             <img className={style.title__line} src={lineYellow213Dec} alt="" />
-          </h2>
-        </Container>
+          </h4>
+        </div>
         <div className={style.gallery}>
           <PhotoAlbum
             onClick={() => navigate('/portfolio')}
@@ -27,6 +26,6 @@ export default function Gallery() {
           ></PhotoAlbum>
         </div>
       </section>
-    </Wrapper>
+    </div>
   );
 }

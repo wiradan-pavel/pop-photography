@@ -1,3 +1,5 @@
+@import '../../styles/common';
+
 .header {
   display: flex;
   justify-content: space-between;
@@ -9,4 +11,10 @@
   display: flex;
   gap: 40px;
   align-items: center;
+}
+
+.btn {
+  @media (max-width: $res500) {
+    display: none;
+  }
 }

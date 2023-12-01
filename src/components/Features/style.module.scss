@@ -1,11 +1,6 @@
-@import '../../styles/var';
+@import '../../styles/common';
 
 .title {
-  font-size: 62px;
-  font-family: $poppins;
-  font-weight: 700;
-  letter-spacing: 2%;
-  color: $black-171;
   padding-top: 130px;
   position: relative;
   z-index: 1;
@@ -80,8 +75,6 @@
     &__p {
       font-size: 28px;
       font-weight: 600;
-      font-family: $poppins;
-      letter-spacing: 2%;
       line-height: 130%;
       color: $black-3a3;
       text-align: center;

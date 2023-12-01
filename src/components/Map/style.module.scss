@@ -1,15 +1,11 @@
-@import '../../styles/var';
+@import '../../styles/common';
 
 .section {
   padding-bottom: 230px;
 }
 
 .title {
-  font-family: $poppins;
-  font-weight: 700;
-  font-size: 62px;
   text-align: center;
-  color: $black-171;
   padding-bottom: 85px;
   position: relative;
   z-index: 1;

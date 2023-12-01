@@ -1,5 +1,4 @@
 import { motion } from 'framer-motion';
-import { Container, Wrapper } from '../elements';
 import { features } from '../../data/features.data';
 import { bulbYellowDec, lineYellow298Dec } from '../../data/decoration.img';
 import { normalListAni, scaleItemAni } from '../../data/animations.var';
@@ -8,15 +7,15 @@ import style from './style.module.scss';
 
 export default function Features() {
   return (
-    <Wrapper>
-      <Container>
+    <div className={style.wrapperWhite}>
+      <div className={style.container}>
         <section>
           <div className={style.title__wrap}>
-            <h2 className={style.title}>
+            <h4 className={style.title}>
               {features.title}
               <img className={style.title__bulb} src={bulbYellowDec} alt="" />
               <img className={style.title__line} src={lineYellow298Dec} alt="" />
-            </h2>
+            </h4>
           </div>
           <motion.div
             variants={normalListAni}
@@ -35,7 +34,7 @@ export default function Features() {
             ))}
           </motion.div>
         </section>
-      </Container>
-    </Wrapper>
+      </div>
+    </div>
   );
 }

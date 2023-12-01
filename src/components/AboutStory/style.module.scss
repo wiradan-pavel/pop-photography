@@ -1,16 +1,12 @@
-@import '../../styles/var';
+@import '../../styles/common';
 
 .section {
   padding: 180px 0 135px;
-  font-family: $poppins;
 }
 
 .title {
   display: flex;
   justify-content: center;
-  font-weight: 700;
-  font-size: 62px;
-  color: $black-171;
   position: relative;
   z-index: 1;
 
@@ -62,7 +58,6 @@
       max-width: 436px;
       font-size: 16px;
       line-height: 187%;
-      color: $grey-898;
     }
   }
 }

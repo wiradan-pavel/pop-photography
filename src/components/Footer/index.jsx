@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
-import { Container, Logo, Wrapper } from '../elements';
+import { Logo } from '../elements';
 import { footer } from '../../data/footer.data';
 import { downUpItemAni } from '../../data/animations.var';
 
@@ -8,8 +8,8 @@ import style from './style.module.scss';
 
 export default function Footer() {
   return (
-    <Wrapper purple>
-      <Container>
+    <div className={style.wrapperPurple}>
+      <div className={style.container}>
         <motion.footer
           variants={downUpItemAni}
           initial="hidden"
@@ -24,7 +24,7 @@ export default function Footer() {
             </div>
 
             <div>
-              <h4 className={style.content__title}>{footer.quickLinksTitle}</h4>
+              <h5 className={style.content__title}>{footer.quickLinksTitle}</h5>
               <ul className={style.content__quickLinks}>
                 {footer.quickLinks.map((item) => (
                   <li key={item.id}>
@@ -35,7 +35,7 @@ export default function Footer() {
             </div>
 
             <div>
-              <h4 className={style.content__title}>{footer.contactTitle}</h4>
+              <h5 className={style.content__title}>{footer.contactTitle}</h5>
               {footer.contacts.map((item) => (
                 <div className={style.content__contacts} key={item.id}>
                   <a href={item.link}>
@@ -52,7 +52,7 @@ export default function Footer() {
             </div>
 
             <div>
-              <h4 className={style.content__title}>{footer.socialLinksTitle}</h4>
+              <h5 className={style.content__title}>{footer.socialLinksTitle}</h5>
               <ul className={style.content__social}>
                 {footer.socialLinks.map((item) => (
                   <li key={item.id}>
@@ -66,7 +66,7 @@ export default function Footer() {
           </div>
           <p className={style.copy}>{footer.copyrightTitle}</p>
         </motion.footer>
-      </Container>
-    </Wrapper>
+      </div>
+    </div>
   );
 }

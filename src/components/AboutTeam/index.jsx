@@ -1,5 +1,4 @@
 import { motion } from 'framer-motion';
-import { Container, Wrapper } from '../elements';
 import { aboutTeam } from '../../data/about.data';
 import { lineYellow388Dec } from '../../data/decoration.img';
 import { normalListAni, upDownItemAni } from '../../data/animations.var';
@@ -8,13 +7,13 @@ import style from './style.module.scss';
 
 export default function AboutTeam() {
   return (
-    <Wrapper>
-      <Container>
+    <div className={style.wrapperWhite}>
+      <div className={style.container}>
         <section className={style.section}>
-          <h2 className={style.title}>
+          <h4 className={style.title}>
             {aboutTeam.title}
             <img src={lineYellow388Dec} alt="" />
-          </h2>
+          </h4>
           <p className={style.text}>{aboutTeam.text}</p>
           <motion.div
             variants={normalListAni}
@@ -35,7 +34,7 @@ export default function AboutTeam() {
             ))}
           </motion.div>
         </section>
-      </Container>
-    </Wrapper>
+      </div>
+    </div>
   );
 }

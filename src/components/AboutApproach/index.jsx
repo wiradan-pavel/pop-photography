@@ -1,4 +1,3 @@
-import { Container, Wrapper } from '../elements';
 import { aboutApproach } from '../../data/about.data';
 import { dotsBlack18Dec, homeWhyPurpleDec, lineYellow333Dec } from '../../data/decoration.img';
 
@@ -6,16 +5,16 @@ import style from './style.module.scss';
 
 export default function AboutApproach() {
   return (
-    <Wrapper>
-      <Container>
+    <div className={style.wrapperWhite}>
+      <div className={style.container}>
         <section className={style.section}>
           <div className={style.div}>
             <div className={style.div__left}>
-              <h2 className={style.div__left__title}>
+              <h4 className={style.title}>
                 {aboutApproach.title1} <br />
                 {aboutApproach.title2}
                 <img src={lineYellow333Dec} alt="" />
-              </h2>
+              </h4>
               <p className={style.div__left__text}>{aboutApproach.text}</p>
             </div>
             <div className={style.div__right}>
@@ -25,7 +24,7 @@ export default function AboutApproach() {
             </div>
           </div>
         </section>
-      </Container>
-    </Wrapper>
+      </div>
+    </div>
   );
 }

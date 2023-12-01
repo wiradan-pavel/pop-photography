@@ -1,8 +1,20 @@
-@import '../../styles/var';
+@import '../../styles/common';
 
 .section {
   padding-bottom: 150px;
-  font-family: $poppins;
+}
+
+.title {
+  line-height: 140%;
+  position: relative;
+  z-index: 1;
+
+  & img {
+    position: absolute;
+    z-index: -1;
+    left: 0;
+    bottom: 5px;
+  }
 }
 
 .div {
@@ -11,28 +23,11 @@
   align-items: center;
 
   &__left {
-    &__title {
-      font-weight: 700;
-      font-size: 65px;
-      line-height: 140%;
-      color: $black-171;
-      position: relative;
-      z-index: 1;
-
-      & img {
-        position: absolute;
-        z-index: -1;
-        left: 0;
-        bottom: 5px;
-      }
-    }
-
     &__text {
       padding-top: 50px;
       max-width: 756px;
       line-height: 187%;
       font-size: 22px;
-      color: $grey-898;
     }
   }
 
