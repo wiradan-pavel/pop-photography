@@ -25,12 +25,18 @@ export default function HomeVideos() {
           >
             <motion.div variants={scaleItemAni} className={style.grid__video}>
               <ReactPlayer
-                width="1030px"
-                height="870px"
+                width="100%"
+                height="670px"
                 url={homeVideo.videoUrls[0]}
                 controls
                 playing
-                light={<img src={homeVideo.previewImgUrls[0]} alt="previewVideoPhoto" />}
+                light={
+                  <img
+                    style={{ width: '100%', height: '670px', objectFit: 'cover' }}
+                    src={homeVideo.previewImgUrls[0]}
+                    alt="previewVideoPhoto"
+                  />
+                }
                 playIcon={
                   <img
                     style={{ position: 'absolute' }}
@@ -44,12 +50,18 @@ export default function HomeVideos() {
             </motion.div>
             <motion.div variants={scaleItemAni} className={style.grid__video}>
               <ReactPlayer
-                width="520px"
-                height="415px"
+                width="100%"
+                height="315px"
                 url={homeVideo.videoUrls[1]}
                 controls
                 playing
-                light={<img src={homeVideo.previewImgUrls[1]} alt="previewVideoPhoto" />}
+                light={
+                  <img
+                    style={{ width: '100%', height: '315px', objectFit: 'cover' }}
+                    src={homeVideo.previewImgUrls[1]}
+                    alt="previewVideoPhoto"
+                  />
+                }
                 playIcon={
                   <img
                     style={{ position: 'absolute' }}
@@ -63,12 +75,18 @@ export default function HomeVideos() {
             </motion.div>
             <motion.div variants={scaleItemAni} className={style.grid__video}>
               <ReactPlayer
-                width="520px"
-                height="415px"
+                width="100%"
+                height="315px"
                 url={homeVideo.videoUrls[2]}
                 controls
                 playing
-                light={<img src={homeVideo.previewImgUrls[2]} alt="previewVideoPhoto" />}
+                light={
+                  <img
+                    style={{ width: '100%', height: '315px', objectFit: 'cover' }}
+                    src={homeVideo.previewImgUrls[2]}
+                    alt="previewVideoPhoto"
+                  />
+                }
                 playIcon={
                   <img
                     style={{ position: 'absolute' }}

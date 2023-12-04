@@ -10,6 +10,11 @@
   justify-content: space-between;
   align-items: start;
 
+  @media (max-width: $res992) {
+    flex-direction: column;
+    gap: 40px;
+  }
+
   &__text {
     font-size: 12px;
     line-height: 250%;

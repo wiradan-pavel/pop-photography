@@ -44,9 +44,11 @@ export default function HomeFeatures() {
                 </motion.li>
               ))}
             </ol>
-            <button className={style.btn}>
-              <Link to={learnMoreBtn.link}>{learnMoreBtn.text}</Link>
-            </button>
+            <div className={style.wrap__btn}>
+              <button className={style.btn}>
+                <Link to={learnMoreBtn.link}>{learnMoreBtn.text}</Link>
+              </button>
+            </div>
             <motion.img
               variants={scaleItemAni}
               className={style.why__left__spiral}

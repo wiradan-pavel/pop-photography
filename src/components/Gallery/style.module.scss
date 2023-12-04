@@ -9,6 +9,16 @@
   position: relative;
   z-index: 1;
 
+  @media (max-width: $res768) {
+    padding-bottom: 40px;
+  }
+
+  & img {
+    @media (max-width: $res768) {
+      display: none;
+    }
+  }
+
   &__line {
     position: absolute;
     z-index: -1;

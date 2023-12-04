@@ -23,10 +23,18 @@
   font-size: 62px;
   font-weight: 700;
 
+  @media (max-width: $res768) {
+    font-size: 34px;
+  }
+
   &Header {
     color: $white;
     font-size: 52px;
     font-weight: 700;
+
+    @media (max-width: $res768) {
+      font-size: 32px;
+    }
   }
 }
 
@@ -41,6 +49,10 @@
   cursor: pointer;
   transition: $quickly;
   box-shadow: 4px 5px $black-171;
+
+  @media (max-width: $res768) {
+    padding: 10px 15px;
+  }
 
   &:hover {
     box-shadow: 2px 3px $black-171;
