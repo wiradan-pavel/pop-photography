@@ -2,6 +2,10 @@
 
 .section {
   padding-bottom: 230px;
+
+  @media (max-width: $res768) {
+    padding-bottom: 80px;
+  }
 }
 
 .title {
@@ -10,11 +14,19 @@
   position: relative;
   z-index: 1;
 
+  @media (max-width: $res768) {
+    padding-bottom: 35px;
+  }
+
   & img {
     position: absolute;
     z-index: -1;
     bottom: 55px;
     left: 35%;
+
+    @media (max-width: $res1200) {
+      display: none;
+    }
   }
 }
 

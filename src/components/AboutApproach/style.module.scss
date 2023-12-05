@@ -9,11 +9,23 @@
   position: relative;
   z-index: 1;
 
+  @media (max-width: $res1510) {
+    text-align: center;
+  }
+
   & img {
     position: absolute;
     z-index: -1;
     left: 0;
     bottom: 5px;
+
+    @media (max-width: $res1510) {
+      left: 28%;
+    }
+
+    @media (max-width: $res768) {
+      display: none;
+    }
   }
 }
 
@@ -22,18 +34,45 @@
   justify-content: space-between;
   align-items: center;
 
+  @media (max-width: $res1510) {
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+  }
+
+  @media (max-width: $res768) {
+    gap: 0px;
+  }
+
   &__left {
     &__text {
       padding-top: 50px;
       max-width: 756px;
       line-height: 187%;
       font-size: 22px;
+
+      @media (max-width: $res1510) {
+        text-align: center;
+      }
+
+      @media (max-width: $res768) {
+        font-size: 16px;
+        padding-top: 20px;
+      }
     }
   }
 
   &__right {
     position: relative;
     z-index: 1;
+
+    @media (max-width: $res768) {
+      transform: scale(0.6);
+    }
+
+    @media (max-width: $res500) {
+      display: none;
+    }
 
     &::before {
       position: absolute;

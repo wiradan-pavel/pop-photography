@@ -1,16 +1,37 @@
 @import '../../../styles/common';
 
 .section {
-  height: 400px;
+  height: 500px;
   display: flex;
   justify-content: space-between;
   padding-top: 70px;
+
+  @media (max-width: $res1200) {
+    padding-top: 0px;
+    flex-direction: column;
+    align-items: center;
+    gap: 80px;
+    height: 500px;
+  }
+
+  @media (max-width: $res768) {
+    gap: 0px;
+    height: 400px;
+  }
 }
 
 .img {
   margin-right: 100px;
   position: relative;
   z-index: 5;
+
+  @media (max-width: $res1200) {
+    margin-right: 0px;
+  }
+
+  @media (max-width: $res768) {
+    transform: scale(0.6);
+  }
 
   &::before {
     content: '';
@@ -51,6 +72,10 @@
 .dec {
   &__camera,
   &__dots72 {
+    @media (max-width: $res768) {
+      display: none;
+    }
+
     position: absolute;
     z-index: 1;
   }

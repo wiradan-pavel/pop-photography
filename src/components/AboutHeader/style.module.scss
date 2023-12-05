@@ -5,11 +5,20 @@
   position: relative;
   z-index: 2;
 
+  @media (max-width: $res768) {
+    text-align: center;
+    padding-top: 30px;
+  }
+
   &__line {
     position: absolute;
     z-index: 1;
     left: 10px;
-    top: 51%;
+    top: 41%;
+
+    @media (max-width: $res1200) {
+      display: none;
+    }
   }
 
   &::before {
@@ -20,6 +29,10 @@
     width: 367px;
     background-color: $yellow;
     right: -10px;
-    bottom: 54%;
+    bottom: 66%;
+
+    @media (max-width: $res1200) {
+      display: none;
+    }
   }
 }

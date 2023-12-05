@@ -2,16 +2,32 @@
 
 .section {
   padding-bottom: 120px;
+
+  @media (max-width: $res768) {
+    padding-bottom: 50px;
+  }
 }
 
 .title {
   padding-bottom: 32px;
   position: relative;
 
+  @media (max-width: $res1510) {
+    text-align: center;
+  }
+
   & img {
     position: absolute;
     bottom: 25px;
     left: 54.5%;
+
+    @media (max-width: $res1510) {
+      left: 60%;
+    }
+
+    @media (max-width: $res768) {
+      display: none;
+    }
   }
 }
 
@@ -21,11 +37,27 @@
   align-items: center;
   gap: 40px;
 
+  @media (max-width: $res1510) {
+    flex-direction: column-reverse;
+  }
+
+  @media (max-width: $res768) {
+    gap: 0px;
+  }
+
   &__left {
     position: relative;
     min-width: 674px;
     height: 624px;
     z-index: 1;
+
+    @media (max-width: $res768) {
+      transform: scale(0.6);
+    }
+
+    @media (max-width: $res500) {
+      display: none;
+    }
 
     &::before {
       position: absolute;
@@ -78,6 +110,14 @@
     &__text {
       font-size: 22px;
       line-height: 187%;
+
+      @media (max-width: $res1510) {
+        text-align: center;
+      }
+
+      @media (max-width: $res768) {
+        font-size: 16px;
+      }
     }
   }
 }
