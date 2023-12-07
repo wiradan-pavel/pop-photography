@@ -5,6 +5,7 @@
   display: flex;
   justify-content: space-between;
   padding-top: 70px;
+  margin-bottom: clamp(1.25rem, -1.131rem + 11.9vw, 6.25rem);
 
   @media (max-width: $res1200) {
     padding-top: 0px;
@@ -31,6 +32,10 @@
 
   @media (max-width: $res768) {
     transform: scale(0.6);
+  }
+
+  &__main {
+    border-radius: 0 35px 0 0;
   }
 
   &::before {

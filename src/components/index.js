@@ -18,6 +18,10 @@ import AboutApproach from './AboutApproach';
 import AboutTeam from './AboutTeam';
 import AboutMission from './AboutMission';
 
+// SERVICES
+import ServicesHeader from './ServicesHeader';
+import ServicesOur from './ServicesOur';
+
 export {
   Header,
   Testimonials,
@@ -33,4 +37,6 @@ export {
   AboutApproach,
   AboutTeam,
   AboutMission,
+  ServicesHeader,
+  ServicesOur,
 };

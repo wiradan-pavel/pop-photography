@@ -1,3 +1,11 @@
+import { Features, ServicesHeader, ServicesOur } from '../components';
+
 export default function Services() {
-  return <div>Services</div>;
+  return (
+    <>
+      <ServicesHeader />
+      <Features />
+      <ServicesOur />
+    </>
+  );
 }

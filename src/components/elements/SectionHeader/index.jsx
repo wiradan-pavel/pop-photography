@@ -22,7 +22,7 @@ export default function SectionHeader({ imgUrl, children }) {
             animate="show"
             className={style.img}
           >
-            <img src={imgUrl} alt="" />
+            <img className={style.img__main} src={imgUrl} alt="" />
             <motion.img
               variants={scaleItemAni}
               className={style.img__spiral}
