@@ -6,7 +6,7 @@ export const faqHeader = {
 };
 
 export const faqContent = {
-  sectionTitle: 'Frequently Asked Questions',
+  title: 'Frequently Asked Questions',
   list: [
     {
       id: 1,

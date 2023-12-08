@@ -1,4 +1,12 @@
-import { Features, ServicesHeader, ServicesOur } from '../components';
+import {
+  Faq,
+  Features,
+  Map,
+  ServicesCust,
+  ServicesHeader,
+  ServicesOur,
+  Testimonials,
+} from '../components';
 
 export default function Services() {
   return (
@@ -6,6 +14,10 @@ export default function Services() {
       <ServicesHeader />
       <Features />
       <ServicesOur />
+      <ServicesCust />
+      <Map />
+      <Testimonials />
+      <Faq />
     </>
   );
 }

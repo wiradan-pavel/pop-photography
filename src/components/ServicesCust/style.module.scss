@@ -1,0 +1,56 @@
+@import '../../styles/common';
+
+.container {
+  padding: clamp(4.375rem, 3.693rem + 3.41vw, 6.25rem) 0 clamp(6.25rem, 4.886rem + 6.82vw, 10rem);
+}
+
+.title {
+  text-align: center;
+  position: relative;
+
+  & img {
+    position: absolute;
+    left: 30%;
+    bottom: -23px;
+
+    @media (max-width: $res768) {
+      display: none;
+    }
+  }
+}
+
+.flex {
+  display: flex;
+  padding-top: clamp(1.875rem, 0.511rem + 6.82vw, 5.625rem);
+  justify-content: space-between;
+  gap: 10px;
+
+  @media (max-width: $res768) {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__item {
+    & img {
+      width: clamp(14.375rem, -1.202rem + 32.45vw, 31.25rem);
+      height: clamp(9.375rem, 3.92rem + 27.27vw, 24.375rem);
+      object-fit: cover;
+
+      @media (max-width: $res768) {
+        width: 100vw;
+      }
+    }
+    & p {
+      color: $black-3a3;
+      font-size: clamp(1.125rem, 0.014rem + 2.31vw, 1.75rem);
+      font-weight: 600;
+      line-height: 130%;
+      padding-top: clamp(0.313rem, -0.256rem + 2.84vw, 1.875rem);
+      text-transform: capitalize;
+
+      @media (max-width: $res768) {
+        text-align: center;
+      }
+    }
+  }
+}

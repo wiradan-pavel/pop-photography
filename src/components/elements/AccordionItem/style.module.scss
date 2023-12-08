@@ -1,0 +1,51 @@
+@import '../../../styles/var';
+
+.arrow {
+  transition: $normal;
+
+  &__active {
+    transform: rotate(180deg);
+  }
+
+  & path {
+    fill: $black-171;
+    transition: $normal;
+  }
+}
+
+.list__item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  border-bottom: 1px solid $white-dbd;
+  padding: 30px 0;
+  cursor: pointer;
+
+  &:hover &__content h6 {
+    color: $purple;
+  }
+
+  &:hover svg path {
+    fill: $purple;
+  }
+
+  &:last-child {
+    border-bottom: none;
+  }
+
+  &__content {
+    & h6 {
+      color: $black-1a1;
+      font-size: 22px;
+      font-weight: 600;
+      line-height: 130%;
+      transition: $normal;
+    }
+    & p {
+      padding-top: 14px;
+      font-size: 16px;
+      line-height: 187%;
+    }
+  }
+}

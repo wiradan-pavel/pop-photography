@@ -1,0 +1,15 @@
+@import '../../styles/common';
+
+.title {
+  position: relative;
+
+  & img {
+    position: absolute;
+    left: 0;
+    bottom: -22px;
+  }
+}
+
+.list {
+  padding: 90px 0 120px;
+}
