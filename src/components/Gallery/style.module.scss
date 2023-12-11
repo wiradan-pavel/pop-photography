@@ -5,13 +5,9 @@
   justify-content: center;
   gap: 20px;
   align-items: center;
-  padding-bottom: 100px;
+  padding: clamp(2.5rem, 1.136rem + 6.82vw, 6.25rem) 0;
   position: relative;
   z-index: 1;
-
-  @media (max-width: $res768) {
-    padding-bottom: 40px;
-  }
 
   & img {
     @media (max-width: $res768) {

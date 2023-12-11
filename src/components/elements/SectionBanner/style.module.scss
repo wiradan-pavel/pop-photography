@@ -1,0 +1,45 @@
+@import '../../../styles/common';
+
+.wrapper__style1 {
+  background-image: url(../../../assets/images/banner/style1.jpg);
+  position: relative;
+  width: 100vw;
+  object-fit: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  @media (max-width: $res1200) {
+    display: none;
+  }
+}
+
+.wrapper__style2 {
+  background-image: url(../../../assets/images/banner/style2.jpg);
+  position: relative;
+  width: 100vw;
+  object-fit: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  @media (max-width: $res1200) {
+    display: none;
+  }
+}
+
+.img__spiral {
+  position: absolute;
+  left: 2px;
+  bottom: 10px;
+}
+
+.img__dots {
+  position: absolute;
+  right: 37px;
+  top: 37px;
+}
+
+.section {
+  padding: 60px 0 80px;
+}

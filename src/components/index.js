@@ -23,6 +23,7 @@ import AboutMission from './AboutMission';
 import ServicesHeader from './ServicesHeader';
 import ServicesOur from './ServicesOur';
 import ServicesCust from './ServicesCust';
+import ServicesBanner from './ServicesBanner';
 
 export {
   Header,
@@ -43,4 +44,5 @@ export {
   ServicesOur,
   ServicesCust,
   Faq,
+  ServicesBanner,
 };

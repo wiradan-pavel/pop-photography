@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { motion } from 'framer-motion';
-import { opacityItemAni } from '../../../data/animations.var';
+import { upDownItemAni } from '../../../data/animations.var';
 
 import style from './style.module.scss';
 
@@ -9,7 +9,7 @@ export default function AccordionItem({ title, text }) {
 
   return (
     <motion.div
-      variants={opacityItemAni}
+      variants={upDownItemAni}
       onClick={() => setOpen(!open)}
       className={style.list__item}
     >
@@ -17,13 +17,9 @@ export default function AccordionItem({ title, text }) {
         <h6>{title}</h6>
         {open && <p>{text}</p>}
       </div>
-      {/*  */}
-
       <svg
-        width="38"
-        height="39"
         viewBox="0 0 38 39"
-        className={open ? style.arrow__active : style.arrow}
+        className={open ? `${style.arrow__active} ${style.arrow}` : style.arrow}
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
       >
@@ -32,8 +28,6 @@ export default function AccordionItem({ title, text }) {
           fill="black"
         />
       </svg>
-
-      {/*  */}
     </motion.div>
   );
 }

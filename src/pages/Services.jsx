@@ -1,7 +1,9 @@
 import {
   Faq,
   Features,
+  Gallery,
   Map,
+  ServicesBanner,
   ServicesCust,
   ServicesHeader,
   ServicesOur,
@@ -18,6 +20,8 @@ export default function Services() {
       <Map />
       <Testimonials />
       <Faq />
+      <ServicesBanner />
+      <Gallery />
     </>
   );
 }

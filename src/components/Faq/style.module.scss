@@ -3,7 +3,14 @@
 .title {
   position: relative;
 
+  @media (max-width: $res768) {
+    text-align: center; 
+  }
+
   & img {
+    @media (max-width: $res768) {
+      display: none;
+    }
     position: absolute;
     left: 0;
     bottom: -22px;
@@ -11,5 +18,5 @@
 }
 
 .list {
-  padding: 90px 0 120px;
+  padding: clamp(1.875rem, 0.511rem + 6.82vw, 5.625rem) 0 clamp(5rem, 4.091rem + 4.55vw, 7.5rem);
 }

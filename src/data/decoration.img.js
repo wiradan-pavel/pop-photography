@@ -22,8 +22,11 @@ import lineYellow416Dec from '../assets/decorations/lineYellow416Dec.svg';
 import planeTurquoiseDec from '../assets/decorations/planeTurquoiseDec.svg';
 import spiralBlackDec from '../assets/decorations/spiralBlackDec.svg';
 import spiralYellowDec from '../assets/decorations/spiralYellowDec.svg';
+import spiralWhiteDec from '../assets/decorations/spiralWhiteDec.svg';
 import waveWhiteDec from '../assets/decorations/waveWhiteDec.svg';
 import youtubePurpleDec from '../assets/decorations/youtubePurpleDec.svg';
+import quotesOpen from '../assets/decorations/quotesOpen.svg';
+import quotesClose from '../assets/decorations/quotesClose.svg';
 
 export {
   bulbYellowDec,
@@ -50,6 +53,9 @@ export {
   planeTurquoiseDec,
   spiralBlackDec,
   spiralYellowDec,
+  spiralWhiteDec,
   waveWhiteDec,
   youtubePurpleDec,
+  quotesOpen,
+  quotesClose,
 };

@@ -1,10 +1,10 @@
 import { motion } from 'framer-motion';
+import { AccordionItem } from '../elements';
 import { faqContent } from '../../data/faq.data';
 import { lineYellow298Dec } from '../../data/decoration.img';
-import { normalListAni } from '../../data/animations.var';
+import { quicklyListAni } from '../../data/animations.var';
 
 import style from './style.module.scss';
-import { AccordionItem } from '../elements';
 
 export default function Faq() {
   const arrList = faqContent.list.filter((_, i) => i < 6);
@@ -18,7 +18,7 @@ export default function Faq() {
             <img src={lineYellow298Dec} alt="" />
           </h4>
           <motion.div
-            variants={normalListAni}
+            variants={quicklyListAni}
             initial="hidden"
             whileInView="show"
             viewport={{ once: true }}

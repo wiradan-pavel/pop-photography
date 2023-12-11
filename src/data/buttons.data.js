@@ -12,3 +12,8 @@ export const homeHeaderBtn = {
   text: 'Book the Star Experience!',
   link: '/pricing',
 };
+
+export const contactUsBtn = {
+  text: 'Contact Us',
+  link: '/pricing',
+};
