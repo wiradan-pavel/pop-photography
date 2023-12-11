@@ -25,6 +25,10 @@ import ServicesOur from './ServicesOur';
 import ServicesCust from './ServicesCust';
 import ServicesBanner from './ServicesBanner';
 
+// FAQ
+import FaqHeader from './FaqHeader';
+import FaqContent from './FaqContent';
+
 export {
   Header,
   Testimonials,
@@ -45,4 +49,6 @@ export {
   ServicesCust,
   Faq,
   ServicesBanner,
+  FaqHeader,
+  FaqContent,
 };

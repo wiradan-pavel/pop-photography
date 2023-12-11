@@ -12,8 +12,8 @@
 
   &__line {
     position: absolute;
-    z-index: 1;
-    left: 50px;
+    z-index: -1;
+    left: 10px;
     top: 42%;
 
     @media (max-width: $res1200) {
@@ -26,7 +26,7 @@
     position: absolute;
     z-index: -1;
     height: 75px;
-    width: 242px;
+    width: 287px;
     background-color: $yellow;
     right: -10px;
     bottom: 56%;

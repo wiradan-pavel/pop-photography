@@ -1,3 +1,10 @@
+import { FaqContent, FaqHeader } from '../components';
+
 export default function Faq() {
-  return <div>Faq</div>;
+  return (
+    <>
+      <FaqHeader />
+      <FaqContent />
+    </>
+  );
 }
