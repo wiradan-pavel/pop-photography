@@ -25,6 +25,15 @@ import ServicesOur from './ServicesOur';
 import ServicesCust from './ServicesCust';
 import ServicesBanner from './ServicesBanner';
 
+// SERVICE__TEEN
+import ServiceTeenHeader from './ServiceTeenHeader';
+
+// SERVICE__KIDS
+import ServiceKidsHeader from './ServiceKidsHeader';
+
+// SERVICE__CHILD
+import ServiceChildHeader from './ServiceChildHeader';
+
 // FAQ
 import FaqHeader from './FaqHeader';
 import FaqContent from './FaqContent';
@@ -51,4 +60,7 @@ export {
   ServicesBanner,
   FaqHeader,
   FaqContent,
+  ServiceTeenHeader,
+  ServiceKidsHeader,
+  ServiceChildHeader,
 };

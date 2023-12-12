@@ -1,3 +1,9 @@
+import { ServiceTeenHeader } from '../components';
+
 export default function ServiceTeen() {
-  return <div>ServiceTeen</div>;
+  return (
+    <>
+      <ServiceTeenHeader />
+    </>
+  );
 }

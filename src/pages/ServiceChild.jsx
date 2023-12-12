@@ -1,3 +1,9 @@
+import { ServiceChildHeader } from '../components';
+
 export default function ServiceChild() {
-  return <div>ServiceChild</div>;
+  return (
+    <>
+      <ServiceChildHeader />
+    </>
+  );
 }
