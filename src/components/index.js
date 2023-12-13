@@ -28,6 +28,10 @@ import ServicesBanner from './ServicesBanner';
 
 // SERVICE__TEEN
 import ServiceTeenHeader from './ServiceTeenHeader';
+import ServiceTeenUnlock from './ServiceTeenUnlock';
+import ServiceTeenImp from './ServiceTeenImp';
+import ServiceTeenOppo from './ServiceTeenOppo';
+import ServiceTeenBanner from './ServiceTeenBanner';
 
 // SERVICE__KIDS
 import ServiceKidsHeader from './ServiceKidsHeader';
@@ -62,6 +66,10 @@ export {
   FaqHeader,
   FaqContent,
   ServiceTeenHeader,
+  ServiceTeenUnlock,
+  ServiceTeenImp,
+  ServiceTeenOppo,
+  ServiceTeenBanner,
   ServiceKidsHeader,
   ServiceChildHeader,
   Form,

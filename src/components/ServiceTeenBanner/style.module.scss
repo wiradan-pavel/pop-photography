@@ -1,0 +1,65 @@
+@import '../../styles/common';
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  gap: 20px;
+
+  @media (max-width: $res1400) {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  & h4 {
+    max-width: 1100px;
+    line-height: 89px;
+    position: relative;
+    font-size: 62px;
+    letter-spacing: 2%;
+    z-index: 1;
+    margin-left: 30px;
+
+    & img {
+      position: absolute;
+    }
+
+    &::before {
+      content: '';
+      position: absolute;
+      background-color: $yellow;
+      width: 373px;
+      height: 76px;
+      left: 30%;
+      top: 5px;
+      z-index: -1;
+    }
+  }
+}
+
+.quotes__open {
+  left: -37px;
+  top: -21px;
+
+  @media (max-width: $res1200) {
+    top: -10px;
+  }
+}
+
+.quotes__close {
+  bottom: 57px;
+  left: 39%;
+  @media (max-width: $res1200) {
+    left: 86.5%;
+  }
+}
+
+.line {
+  left: 0;
+  bottom: -7px;
+
+  @media (max-width: $res1200) {
+    right: 15%;
+    bottom: 0;
+  }
+}

@@ -1,7 +1,8 @@
 @import '../../styles/common';
 
 .container {
-  padding: clamp(4.375rem, 3.58rem + 3.98vw, 6.563rem) 10px;
+  padding: clamp(4.375rem, 3.58rem + 3.98vw, 6.563rem) 10px
+    clamp(1.875rem, 1.193rem + 3.41vw, 3.75rem);
 }
 
 .section {
