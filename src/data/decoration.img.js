@@ -11,6 +11,7 @@ import homeHeaderBackground2Dec from '../assets/decorations/homeHeaderBackground
 import homeWhyPurpleDec from '../assets/decorations/homeWhyPurpleDec.png';
 import lineYellow95Dec from '../assets/decorations/lineYellow95Dec.svg';
 import lineYellow119Dec from '../assets/decorations/lineYellow119Dec.svg';
+import lineYellow138Dec from '../assets/decorations/lineYellow138Dec.svg';
 import lineYellow164Dec from '../assets/decorations/lineYellow164Dec.svg';
 import lineYellow213Dec from '../assets/decorations/lineYellow213Dec.svg';
 import lineYellow273Dec from '../assets/decorations/lineYellow273Dec.svg';
@@ -42,6 +43,7 @@ export {
   homeWhyPurpleDec,
   lineYellow95Dec,
   lineYellow119Dec,
+  lineYellow138Dec,
   lineYellow164Dec,
   lineYellow213Dec,
   lineYellow273Dec,

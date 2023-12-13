@@ -62,4 +62,8 @@
     transform: translateX(2px) translateY(3px);
     box-shadow: none;
   }
+
+  &:disabled {
+    opacity: 0.8;
+  }
 }

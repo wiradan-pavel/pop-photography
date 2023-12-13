@@ -1,0 +1,97 @@
+@import '../../styles/common';
+
+.container {
+  padding: clamp(4.375rem, 3.58rem + 3.98vw, 6.563rem) 10px;
+}
+
+.section {
+  box-shadow: 0px 0px 58px rgba($color: $black, $alpha: 0.1);
+  display: flex;
+  justify-content: space-between;
+}
+
+.title {
+  font-size: 32px;
+  padding-bottom: 25px;
+  position: relative;
+  text-transform: capitalize;
+
+  @media (max-width: $res992) {
+    text-align: center;
+  }
+
+  & img {
+    position: absolute;
+    left: 172px;
+    bottom: 11px;
+
+    @media (max-width: $res992) {
+      display: none;
+    }
+  }
+}
+
+.btn {
+  width: fit-content;
+}
+
+.form {
+  padding: clamp(1.25rem, -0.02rem + 4.07vw, 2.5rem) clamp(1.25rem, -0.338rem + 5.08vw, 2.813rem);
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  color: $grey-898;
+  width: clamp(36.875rem, -9.029rem + 74.04vw, 46.5rem);
+
+  @media (max-width: $res992) {
+    width: 100%;
+  }
+
+  & input,
+  & textarea {
+    font-size: 16px;
+    padding: 18px 24px;
+    margin-bottom: 5px;
+    width: 100%;
+    outline: none;
+    color: inherit;
+    border: 1px solid $grey-c7c;
+    font-family: inherit;
+  }
+
+  &__top,
+  &__bottom {
+    display: flex;
+    justify-content: space-between;
+    gap: 25px;
+
+    @media (max-width: $res500) {
+      flex-direction: column;
+    }
+  }
+
+  &__textarea {
+    min-height: 229px;
+    resize: none;
+  }
+}
+
+.img {
+  @media (max-width: $res992) {
+    display: none;
+  }
+
+  & img {
+    width: clamp(18.75rem, -55.5rem + 99vw, 43.5rem);
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+.div__errors {
+  display: flex;
+  gap: 10px;
+  & p {
+    color: $purple;
+  }
+}

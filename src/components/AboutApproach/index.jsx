@@ -1,5 +1,6 @@
+import { DivPhoto } from '../elements';
 import { aboutApproach } from '../../data/about.data';
-import { dotsBlack18Dec, homeWhyPurpleDec, lineYellow333Dec } from '../../data/decoration.img';
+import { lineYellow333Dec } from '../../data/decoration.img';
 
 import style from './style.module.scss';
 
@@ -17,11 +18,7 @@ export default function AboutApproach() {
               </h4>
               <p className={style.div__left__text}>{aboutApproach.text}</p>
             </div>
-            <div className={style.div__right}>
-              <img className={style.div__right__img} src={aboutApproach.imgUrl} alt="" />
-              <img className={style.div__right__dots} src={dotsBlack18Dec} alt="" />
-              <img className={style.div__right__figure} src={homeWhyPurpleDec} alt="" />
-            </div>
+            <DivPhoto imgUrl={aboutApproach.imgUrl} />
           </div>
         </section>
       </div>

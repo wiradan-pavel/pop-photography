@@ -6,6 +6,7 @@ import Gallery from './Gallery';
 import Footer from './Footer';
 import Map from './Map';
 import Faq from './Faq';
+import Form from './Form';
 
 // HOME
 import HomeHeader from './HomeHeader';
@@ -63,4 +64,5 @@ export {
   ServiceTeenHeader,
   ServiceKidsHeader,
   ServiceChildHeader,
+  Form,
 };
