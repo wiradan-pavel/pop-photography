@@ -1,0 +1,52 @@
+@import '../../styles/common';
+
+.section {
+  display: flex;
+  gap: clamp(1.25rem, -3.849rem + 8.22vw, 4.375rem);
+  align-items: center;
+  padding: clamp(2.5rem, 1.136rem + 6.82vw, 6.25rem) 0 clamp(3.75rem, 2.386rem + 6.82vw, 7.5rem);
+
+  @media (max-width: $res1400) {
+    flex-direction: column-reverse;
+    justify-content: center;
+  }
+}
+
+.content {
+  & h4 {
+    line-height: 120%;
+    padding-bottom: clamp(1.25rem, -0.417rem + 8.33vw, 4.75rem);
+    position: relative;
+    font-size: clamp(2rem, -1.059rem + 4.93vw, 3.875rem);
+
+    @media (max-width: $res1400) {
+      max-width: 800px;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    & img {
+      position: absolute;
+      bottom: 43px;
+      left: 0%;
+
+      @media (max-width: $res1400) {
+        left: 24%;
+      }
+
+      @media (max-width: $res768) {
+        display: none;
+      }
+    }
+  }
+  & p {
+    max-width: 736px;
+    line-height: 187%;
+    font-size: 16px;
+    padding-bottom: clamp(0.625rem, 0.398rem + 1.14vw, 1.25rem);
+
+    @media (max-width: $res1400) {
+      margin: 0 auto;
+    }
+  }
+}

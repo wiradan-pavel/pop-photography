@@ -35,9 +35,15 @@ import ServiceTeenBanner from './ServiceTeenBanner';
 
 // SERVICE__KIDS
 import ServiceKidsHeader from './ServiceKidsHeader';
+import ServiceKidsUnlock from './ServiceKidsUnlock';
 
 // SERVICE__CHILD
 import ServiceChildHeader from './ServiceChildHeader';
+import ServiceChildDiscover from './ServiceChildDiscover';
+import ServiceChildExp from './ServiceChildExp';
+import ServiceChildBannerFirst from './ServiceChildBannerFirst';
+import ServiceChildWhy from './ServiceChildWhy';
+import ServiceChildBannerSecond from './ServiceChildBannerSecond';
 
 // FAQ
 import FaqHeader from './FaqHeader';
@@ -71,6 +77,12 @@ export {
   ServiceTeenOppo,
   ServiceTeenBanner,
   ServiceKidsHeader,
+  ServiceKidsUnlock,
   ServiceChildHeader,
+  ServiceChildDiscover,
+  ServiceChildExp,
+  ServiceChildBannerFirst,
+  ServiceChildWhy,
+  ServiceChildBannerSecond,
   Form,
 };

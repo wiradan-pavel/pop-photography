@@ -1,0 +1,112 @@
+@import '../../styles/common';
+
+.section {
+  padding-top: clamp(2.5rem, 0.682rem + 9.09vw, 7.5rem);
+}
+
+.title {
+  position: relative;
+
+  @media (max-width: $res992) {
+    text-align: center;
+  }
+
+  & img {
+    position: absolute;
+    left: 23%;
+    bottom: -25px;
+
+    @media (max-width: $res992) {
+      left: 50%;
+    }
+
+    @media (max-width: $res768) {
+      display: none;
+    }
+  }
+}
+
+.content {
+  padding: clamp(1.25rem, -0.341rem + 7.95vw, 5.625rem) 0
+    clamp(3.125rem, 1.989rem + 5.68vw, 6.25rem);
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  gap: 10px;
+
+  @media (max-width: $res992) {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+
+  &__img {
+    position: relative;
+    z-index: 1;
+
+    &::before {
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      border-radius: 20px;
+      background-color: $purple;
+      z-index: -1;
+      left: -18px;
+      bottom: -22px;
+    }
+
+    & img {
+      border-radius: 0 0 20px 20px;
+      max-height: 630px;
+      width: 100%;
+    }
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: clamp(0.625rem, -0.284rem + 4.55vw, 3.125rem);
+    padding-top: 10px;
+
+    &__item {
+      display: flex;
+      gap: clamp(0.625rem, 0.268rem + 1.79vw, 1.375rem);
+      align-items: center;
+      box-shadow: 0 0 10px rgba($color: $black, $alpha: 0.1);
+      padding: clamp(0.625rem, 0.284rem + 1.7vw, 1.563rem)
+        clamp(0.625rem, 0.057rem + 2.84vw, 2.188rem);
+
+      &__img {
+        position: relative;
+        min-width: clamp(5rem, 4.107rem + 4.46vw, 6.875rem);
+        height: clamp(5rem, 4.107rem + 4.46vw, 6.875rem);
+        z-index: 1;
+
+        &::before {
+          position: absolute;
+          content: '';
+          width: 100%;
+          height: 100%;
+          background-color: $white-e0e;
+          opacity: 0.1;
+          border-radius: 50%;
+          z-index: -1;
+        }
+
+        & img {
+          position: absolute;
+          left: 12px;
+          top: 10px;
+          width: 80%;
+        }
+      }
+
+      &__title {
+        font-size: clamp(1.25rem, 1.068rem + 0.91vw, 1.75rem);
+        font-weight: 600;
+        text-transform: capitalize;
+        color: $black-171;
+      }
+    }
+  }
+}
