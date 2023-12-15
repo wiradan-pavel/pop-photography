@@ -1,0 +1,36 @@
+@import '../../styles/common';
+
+.div {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+}
+
+.titleHeader {
+  max-width: 1000px;
+  line-height: 150%;
+  position: relative;
+  z-index: 2;
+
+  & img {
+    position: absolute;
+    left: 10%;
+    top: 70px;
+    z-index: 1;
+  }
+
+  &::before {
+    position: absolute;
+    content: '';
+    background-color: $yellow;
+    width: 120px;
+    height: 70px;
+    bottom: 5px;
+    left: 290px;
+    z-index: -1;
+  }
+}
+
+.btn {
+  margin: 28px 28px 0 0;
+}

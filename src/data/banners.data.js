@@ -15,3 +15,8 @@ export const bannerChildSecond = {
 export const bannerKidsFirst = {
   title: "Book Your Kid's Aspiring Model Session Now!",
 };
+
+export const bannerKidsSecond = {
+  title1: 'Capture Precious Moments and Create Lasting Memories—',
+  title2: 'All for Just $99!',
+};

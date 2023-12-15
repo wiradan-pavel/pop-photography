@@ -38,6 +38,9 @@ import ServiceKidsHeader from './ServiceKidsHeader';
 import ServiceKidsUnlock from './ServiceKidsUnlock';
 import ServiceKidsImp from './ServiceKidsImp';
 import ServiceKidsBannerFirst from './ServiceKidsBannerFirst';
+import ServiceKidsElevate from './ServiceKidsElevate';
+import ServiceKidsTransform from './ServiceKidsTransform';
+import ServiceKidsBannerSecond from './ServiceKidsBannerSecond';
 
 // SERVICE__CHILD
 import ServiceChildHeader from './ServiceChildHeader';
@@ -52,41 +55,59 @@ import FaqHeader from './FaqHeader';
 import FaqContent from './FaqContent';
 
 export {
+  // *
   Header,
-  Testimonials,
   Features,
+  Testimonials,
+  Faq,
+  Map,
+  Form,
+  Gallery,
+  Footer,
+
+  // HOME
   HomeHeader,
   HomeVideos,
   HomeFeatures,
-  Gallery,
-  Footer,
-  Map,
+
+  // ABOUT
   AboutHeader,
   AboutStory,
   AboutApproach,
   AboutTeam,
   AboutMission,
+
+  // SERVICES
   ServicesHeader,
   ServicesOur,
   ServicesCust,
-  Faq,
   ServicesBanner,
+
+  // FAQ
   FaqHeader,
   FaqContent,
+
+  // SERVICE__TEEN
   ServiceTeenHeader,
   ServiceTeenUnlock,
   ServiceTeenImp,
   ServiceTeenOppo,
   ServiceTeenBanner,
+
+  // SERVICE__KIDS
   ServiceKidsHeader,
   ServiceKidsUnlock,
   ServiceKidsImp,
   ServiceKidsBannerFirst,
+  ServiceKidsElevate,
+  ServiceKidsTransform,
+  ServiceKidsBannerSecond,
+
+  // SERVICE__CHILD
   ServiceChildHeader,
   ServiceChildDiscover,
   ServiceChildExp,
   ServiceChildBannerFirst,
   ServiceChildWhy,
   ServiceChildBannerSecond,
-  Form,
 };

@@ -1,0 +1,48 @@
+@import '../../styles/common';
+
+.section {
+  padding-bottom: clamp(6.25rem, 3.977rem + 11.36vw, 12.5rem);
+}
+
+.title {
+  text-align: center;
+  position: relative;
+  padding-bottom: clamp(1.875rem, 0.284rem + 7.95vw, 6.25rem);
+  line-height: 130%;
+
+  & img {
+    position: absolute;
+    right: 8%;
+    bottom: 85px;
+
+    @media (max-width: $res1400) {
+      display: none;
+    }
+  }
+}
+
+.content {
+  position: relative;
+  max-width: 1540px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  gap: 4px;
+
+  &__before,
+  &__after {
+    border-radius: 35px 0 0 35px;
+
+    & img {
+      object-fit: cover;
+      width: 100%;
+    }
+  }
+
+  &__arrow {
+    position: absolute;
+    width: clamp(1.563rem, 0.199rem + 6.82vw, 5.313rem);
+    top: calc(50% - clamp(0.781rem, 0.099rem + 3.41vw, 2.656rem));
+    left: calc(50% - clamp(0.781rem, 0.099rem + 3.41vw, 2.656rem));
+  }
+}
