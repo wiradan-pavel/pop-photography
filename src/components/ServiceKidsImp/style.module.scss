@@ -1,15 +1,17 @@
 @import '../../styles/common';
 
+.section {
+  padding-bottom: clamp(2.5rem, 1.364rem + 5.68vw, 5.625rem);
+}
+
 .title {
   text-align: center;
   position: relative;
-  z-index: 2;
 
   & img {
     position: absolute;
-    right: 22%;
-    bottom: -28px;
-    z-index: 1;
+    right: 37%; 
+    bottom: -15px;
 
     @media (max-width: $res768) {
       display: none;

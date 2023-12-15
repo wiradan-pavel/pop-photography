@@ -12,6 +12,6 @@ export const bannerChildSecond = {
   list: ['gaining Modelling experience', 'posing for the camera', 'professional portfolio'],
 };
 
-export const bannerKids = {
+export const bannerKidsFirst = {
   title: "Book Your Kid's Aspiring Model Session Now!",
 };

@@ -36,6 +36,8 @@ import ServiceTeenBanner from './ServiceTeenBanner';
 // SERVICE__KIDS
 import ServiceKidsHeader from './ServiceKidsHeader';
 import ServiceKidsUnlock from './ServiceKidsUnlock';
+import ServiceKidsImp from './ServiceKidsImp';
+import ServiceKidsBannerFirst from './ServiceKidsBannerFirst';
 
 // SERVICE__CHILD
 import ServiceChildHeader from './ServiceChildHeader';
@@ -78,6 +80,8 @@ export {
   ServiceTeenBanner,
   ServiceKidsHeader,
   ServiceKidsUnlock,
+  ServiceKidsImp,
+  ServiceKidsBannerFirst,
   ServiceChildHeader,
   ServiceChildDiscover,
   ServiceChildExp,
