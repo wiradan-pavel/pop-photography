@@ -1,0 +1,80 @@
+@import '../../styles/common';
+
+.section {
+  padding: 50px 0 100px;
+}
+
+.title {
+  position: relative;
+
+  & img {
+    position: absolute;
+    bottom: -20px;
+    left: 5px;
+  }
+}
+
+.stroke {
+  padding: 85px 0 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &__categories {
+    display: flex;
+    gap: 60px;
+    flex-grow: 1;
+  }
+
+  &__search {
+    position: relative;
+    z-index: 1;
+    flex-grow: 1;
+
+    &::before {
+      position: absolute;
+      content: url(../../assets/icons/loupe.svg);
+      width: 24px;
+      height: 24px;
+      z-index: 2;
+      left: 25px;
+      top: calc(50% - 12px);
+      pointer-events: none;
+    }
+
+    & input {
+      padding: 20px 80px;
+      border: 1px solid $white-dbd;
+      border-radius: 10px;
+      outline: none;
+      font-weight: 300;
+      font-size: 16px;
+      width: 100%;
+    }
+  }
+}
+
+.button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  font-weight: 500;
+  color: $black-171;
+  font-size: 26px;
+
+  &__active {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    color: $purple;
+    font-weight: 500;
+    font-size: 26px;
+    text-decoration: underline;
+  }
+}
+
+.articles {
+  display: grid;
+  grid-template: repeat(3, 1fr) / repeat(3, 1fr);
+  gap: 40px 50px;
+}

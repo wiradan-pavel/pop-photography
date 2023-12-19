@@ -19,19 +19,19 @@ export const servicesOur = {
       id: 1,
       num: '01',
       text: 'Kids Photography',
-      link: '/',
+      link: '/services/kids-photography',
     },
     {
       id: 2,
       num: '02',
       text: 'Child Modelling',
-      link: '/',
+      link: '/services/child-modelling',
     },
     {
       id: 3,
       num: '03',
       text: 'Teen Modelling Folios',
-      link: '/',
+      link: '/services/teen-modelling',
     },
   ],
 };

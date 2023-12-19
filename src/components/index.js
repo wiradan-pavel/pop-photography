@@ -54,6 +54,10 @@ import ServiceChildBannerSecond from './ServiceChildBannerSecond';
 import FaqHeader from './FaqHeader';
 import FaqContent from './FaqContent';
 
+// BLOG
+import BlogHeader from './BlogHeader';
+import BlogContent from './BlogContent';
+
 export {
   // *
   Header,
@@ -110,4 +114,8 @@ export {
   ServiceChildBannerFirst,
   ServiceChildWhy,
   ServiceChildBannerSecond,
+
+  // BLOG
+  BlogHeader,
+  BlogContent,
 };

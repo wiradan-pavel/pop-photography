@@ -1,3 +1,10 @@
+import { BlogContent, BlogHeader } from '../components';
+
 export default function Blog() {
-  return <div>Blog</div>;
+  return (
+    <>
+      <BlogHeader />
+      <BlogContent />
+    </>
+  );
 }

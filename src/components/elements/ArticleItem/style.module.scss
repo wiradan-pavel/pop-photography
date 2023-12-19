@@ -1,0 +1,62 @@
+@import '../../../styles/var';
+
+.item {
+  max-width: 495px;
+  border-radius: 20px;
+  border: 1px solid $white-dbd;
+
+  &__author {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding-bottom: 15px;
+
+    &__img {
+      & img {
+        width: 31px;
+        height: 31px;
+        border-radius: 50%;
+        object-fit: cover;
+      }
+    }
+
+    &__name,
+    &__date {
+      font-weight: 600;
+      font-size: 13px;
+      color: $grey-404;
+      position: relative;
+      line-height: 120%;
+    }
+
+    &__name {
+      padding-right: 15px;
+
+      &::before {
+        position: absolute;
+        content: '';
+        width: 1px;
+        height: 100%;
+        background-color: $grey-404;
+        right: 0;
+        top: 0;
+      }
+    }
+
+    &__date {
+      font-weight: 400;
+      padding-left: 22px;
+
+      &::before {
+        position: absolute;
+        content: url(../../../assets/icons/dateStyle2.svg);
+        top: -2px;
+        left: 0;
+      }
+    }
+  }
+}
+
+.content {
+  padding: 15px 25px 25px;
+}
