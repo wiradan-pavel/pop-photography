@@ -1,9 +1,12 @@
 import { Link } from 'react-router-dom';
+import { motion } from 'framer-motion';
+import { opacityItemAni } from '../../../data/animations.var';
+
 import style from './style.module.scss';
 
 export default function ArticleItem({ headerImg, authorImg, author, date, title, text }) {
   return (
-    <div className={style.item}>
+    <motion.div variants={opacityItemAni} className={style.item}>
       <div className={style.item__img}>
         <img src={headerImg} alt="" />
       </div>
@@ -15,10 +18,16 @@ export default function ArticleItem({ headerImg, authorImg, author, date, title,
           <p className={style.item__author__name}>{author}</p>
           <p className={style.item__author__date}>{date}</p>
         </div>
-        <h6 className={style.item__title}>{title}</h6>
-        <p className={style.utem__text}>{text[0]}</p>
-        <Link to="/">READ MORE</Link>
+        <div className={style.item__content}>
+          <h6 className={style.item__title}>{title}</h6>
+          <p className={style.item__text}>{text[0]}</p>
+          <div className={style.item__btn}>
+            <Link className={style.item__btn} to="/">
+              READ MORE
+            </Link>
+          </div>
+        </div>
       </div>
-    </div>
+    </motion.div>
   );
 }

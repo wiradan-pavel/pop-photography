@@ -7,23 +7,41 @@
 .title {
   position: relative;
 
+  @media (max-width: $res768) {
+    text-align: center;
+  }
+
   & img {
     position: absolute;
     bottom: -20px;
     left: 5px;
+
+    @media (max-width: $res768) {
+      display: none;
+    }
   }
 }
 
 .stroke {
-  padding: 85px 0 40px;
+  padding: clamp(2.5rem, 1.477rem + 5.11vw, 5.313rem) 0 clamp(1.875rem, 1.648rem + 1.14vw, 2.5rem);
   display: flex;
   justify-content: space-between;
   align-items: center;
 
+  @media (max-width: $res1200) {
+    flex-direction: column-reverse;
+    gap: 20px;
+  }
+
   &__categories {
     display: flex;
-    gap: 60px;
+    gap: clamp(0.625rem, -2.26rem + 6.01vw, 3.75rem);
     flex-grow: 1;
+
+    @media (max-width: $res660) {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
   }
 
   &__search {
@@ -37,13 +55,13 @@
       width: 24px;
       height: 24px;
       z-index: 2;
-      left: 25px;
+      left: clamp(0.625rem, 0.284rem + 1.7vw, 1.563rem);
       top: calc(50% - 12px);
       pointer-events: none;
     }
 
     & input {
-      padding: 20px 80px;
+      padding: clamp(0.938rem, 0.824rem + 0.57vw, 1.25rem) clamp(2.813rem, 2.017rem + 3.98vw, 5rem);
       border: 1px solid $white-dbd;
       border-radius: 10px;
       outline: none;
@@ -60,7 +78,7 @@
   cursor: pointer;
   font-weight: 500;
   color: $black-171;
-  font-size: 26px;
+  font-size: clamp(1.125rem, 1rem + 0.63vw, 1.625rem);
 
   &__active {
     background-color: transparent;
@@ -68,7 +86,7 @@
     cursor: pointer;
     color: $purple;
     font-weight: 500;
-    font-size: 26px;
+    font-size: clamp(1.125rem, 1rem + 0.63vw, 1.625rem);
     text-decoration: underline;
   }
 }
@@ -76,5 +94,13 @@
 .articles {
   display: grid;
   grid-template: repeat(3, 1fr) / repeat(3, 1fr);
-  gap: 40px 50px;
+  gap: clamp(1.25rem, 0.096rem + 2.4vw, 2.5rem) clamp(1.25rem, -0.481rem + 3.61vw, 3.125rem);
+
+  @media (max-width: $res660) {
+    grid-template: repeat(4, 1fr) / repeat(2, 1fr);
+  }
+
+  @media (max-width: $res430) {
+    grid-template: repeat(6, 1fr) / repeat(1, 1fr);
+  }
 }

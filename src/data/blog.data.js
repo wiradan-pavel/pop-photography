@@ -91,7 +91,7 @@ export const blogArticles = [
     author: 'John Doe',
     authorImg: authorImg,
     date: 'Oct 21, 2023',
-    title: '10 Tips for Stunning Photography',
+    title: 'Leap into electronic',
     category: 'Kids Photography',
     text: [
       'It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. Why do we use it?',
@@ -107,7 +107,7 @@ export const blogArticles = [
     author: 'John Doe',
     authorImg: authorImg,
     date: 'Oct 20, 2023',
-    title: '10 Tips for Stunning Photography',
+    title: 'Child Modelling',
     category: 'Child Modelling',
     text: [
       "The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.",
@@ -141,7 +141,7 @@ export const blogArticles = [
     author: 'John Doe',
     authorImg: authorImg,
     date: 'Oct 18, 2023',
-    title: '10 Tips for Stunning Photography',
+    title: 'Electronic typesetting',
     category: 'Teen Modelling',
     text: [
       "The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.",
@@ -155,7 +155,7 @@ export const blogArticles = [
     author: 'John Doe',
     authorImg: authorImg,
     date: 'Oct 17, 2023',
-    title: '10 Tips for Stunning Photography',
+    title: 'Normal distribution of letters',
     category: 'Child Modelling',
     text: [
       "The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.",
@@ -189,7 +189,7 @@ export const blogArticles = [
     author: 'John Doe',
     authorImg: authorImg,
     date: 'Oct 15, 2023',
-    title: '10 Tips for Stunning Photography',
+    title: 'It was popularised in the 1960s',
     category: 'Teen Modelling',
     text: [
       "The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.",
@@ -206,7 +206,7 @@ export const blogArticles = [
     author: 'John Doe',
     authorImg: authorImg,
     date: 'Oct 14, 2023',
-    title: '10 Tips for Stunning Photography',
+    title: 'Ipsum is that',
     category: 'Kids Photography',
     text: [
       "The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.",
@@ -226,7 +226,7 @@ export const blogArticles = [
     author: 'John Doe',
     authorImg: authorImg,
     date: 'Oct 13, 2023',
-    title: '10 Tips for Stunning Photography',
+    title: 'Lorem Ipsum is that it has',
     category: 'Kids Photography',
     text: [
       'It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. Why do we use it?',
@@ -243,7 +243,7 @@ export const blogArticles = [
     author: 'John Doe',
     authorImg: authorImg,
     date: 'Oct 12, 2023',
-    title: '10 Tips for Stunning Photography',
+    title: 'It has survived not only five centuries',
     category: 'Child Modelling',
     text: [
       'It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. Why do we use it?',
