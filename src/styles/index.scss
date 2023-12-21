@@ -2,6 +2,10 @@
 @import 'fonts.scss';
 @import 'var.scss';
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   overflow-x: hidden;
   font-family: $poppins;

@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { motion } from 'framer-motion';
 import { ArticleItem } from '../elements';
 import { blogContent, blogArticles } from '../../data/blog.data';
@@ -12,13 +12,25 @@ export default function BlogContent() {
   const [category, setCategory] = useState('All');
 
   // PAGINATION
+  const articlesWithFilters = blogArticles
+    .filter((article) => {
+      return category === 'All' ? article : article.category.includes(category);
+    })
+    .filter((article) => {
+      return search.toLowerCase() === '' ? article : article.title.toLowerCase().includes(search);
+    });
+
   const [currentPage, setCurrentPage] = useState(1);
   const perPage = 6;
   const lastIndex = currentPage * perPage;
   const firstIndex = lastIndex - perPage;
-  const page = blogArticles.slice(firstIndex, lastIndex);
-  const npage = Math.ceil(blogArticles.length / perPage);
+  const page = articlesWithFilters.slice(firstIndex, lastIndex);
+  const npage = Math.ceil(articlesWithFilters.length / perPage);
   const numbers = [...Array(npage + 1).keys()].slice(1);
+
+  useEffect(() => {
+    setCurrentPage(1);
+  }, [npage]);
 
   return (
     <div className={style.wrapperWhite}>
@@ -56,18 +68,9 @@ export default function BlogContent() {
             animate="show"
             className={style.articles}
           >
-            {page
-              .filter((article) => {
-                return category === 'All' ? article : article.category.includes(category);
-              })
-              .filter((article) => {
-                return search.toLowerCase() === ''
-                  ? article
-                  : article.title.toLowerCase().includes(search);
-              })
-              .map((article) => (
-                <ArticleItem key={article.id} {...article} />
-              ))}
+            {page.map((article) => (
+              <ArticleItem key={article.id} {...article} />
+            ))}
           </motion.div>
           <nav className={style.pagination}>
             <ul className={style.pagination__list}>
