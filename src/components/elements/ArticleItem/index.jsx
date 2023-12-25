@@ -4,7 +4,7 @@ import { opacityItemAni } from '../../../data/animations.var';
 
 import style from './style.module.scss';
 
-export default function ArticleItem({ headerImg, authorImg, author, date, title, text }) {
+export default function ArticleItem({ id, headerImg, authorImg, author, date, title, text }) {
   return (
     <motion.div variants={opacityItemAni} className={style.item}>
       <div className={style.item__img}>
@@ -22,7 +22,7 @@ export default function ArticleItem({ headerImg, authorImg, author, date, title,
           <h6 className={style.item__title}>{title}</h6>
           <p className={style.item__text}>{text[0]}</p>
           <div className={style.item__btn}>
-            <Link className={style.item__btn} to="/">
+            <Link className={style.item__btn} to={`/blog/${id}`}>
               READ MORE
             </Link>
           </div>

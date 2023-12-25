@@ -9,8 +9,10 @@ import {
   ServiceTeen,
   ServiceChild,
   ServiceKids,
+  BlogItem,
 } from './pages';
 import { Footer, Header } from './components';
+import { ScrollToTop } from './functions';
 
 export default function App() {
   return (
@@ -25,9 +27,11 @@ export default function App() {
         <Route path="/services/kids-photography" element={<ServiceKids />} />
         <Route path="/faq" element={<Faq />} />
         <Route path="/blog" element={<Blog />} />
+        <Route path="/blog/:id" element={<BlogItem />} />
         <Route path="/pricing" element={<Pricing />} />
       </Routes>
       <Footer />
+      <ScrollToTop />
     </>
   );
 }

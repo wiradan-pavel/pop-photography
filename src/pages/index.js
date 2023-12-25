@@ -8,6 +8,7 @@ import Blog from './Blog';
 import Faq from './Faq';
 import Portfolio from './Portfolio';
 import Pricing from './Pricing';
+import BlogItem from './BlogItem';
 
 export {
   Home,
@@ -17,6 +18,7 @@ export {
   ServiceKids,
   ServiceTeen,
   Blog,
+  BlogItem,
   Faq,
   Portfolio,
   Pricing,

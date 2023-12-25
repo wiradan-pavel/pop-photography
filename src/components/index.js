@@ -58,6 +58,10 @@ import FaqContent from './FaqContent';
 import BlogHeader from './BlogHeader';
 import BlogContent from './BlogContent';
 
+// BLOG__ITEM
+import BlogItemHeader from './BlogItemHeader';
+import BlogItemContent from './BlogItemContent';
+
 export {
   // *
   Header,
@@ -118,4 +122,8 @@ export {
   // BLOG
   BlogHeader,
   BlogContent,
+
+  // BLOG__ITEM
+  BlogItemHeader,
+  BlogItemContent,
 };

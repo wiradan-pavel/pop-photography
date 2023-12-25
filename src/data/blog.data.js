@@ -1,4 +1,5 @@
 import headerImg from '../assets/images/blog/header.jpg';
+import itemHeaderImg from '../assets/images/blog/itemHeader.jpg';
 import authorImg from '../assets/images/blog/articles/author.jpg';
 
 // 22.10.2023
@@ -56,6 +57,14 @@ import article3Img12_10_2023 from '../assets/images/blog/articles/12.10.2023/art
 export const blogHeader = {
   title: 'Our Blogs',
   imgUrl: headerImg,
+};
+
+export const blogItemData = {
+  titleHeader: 'Blog Details',
+  recentTitle: 'Recent Articles',
+  categoryTitle: 'Categories',
+  categories: ['Teen Modelling', 'Kids Photography', 'Child Modling'],
+  imgUrl: itemHeaderImg,
 };
 
 export const blogContent = {
