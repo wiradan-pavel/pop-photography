@@ -62,6 +62,13 @@ import BlogContent from './BlogContent';
 import BlogItemHeader from './BlogItemHeader';
 import BlogItemContent from './BlogItemContent';
 
+// PORTFOLIO
+import PortfolioHeader from './PortfolioHeader';
+import PortfolioContent from './PortfolioContent';
+
+// PRICING
+import PricingHeader from './PricingHeader';
+
 export {
   // *
   Header,
@@ -126,4 +133,11 @@ export {
   // BLOG__ITEM
   BlogItemHeader,
   BlogItemContent,
+
+  // PORTFOLIO
+  PortfolioHeader,
+  PortfolioContent,
+
+  // PRICING
+  PricingHeader,
 };

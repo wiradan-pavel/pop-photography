@@ -10,6 +10,7 @@ import {
   ServiceChild,
   ServiceKids,
   BlogItem,
+  Portfolio,
 } from './pages';
 import { Footer, Header } from './components';
 import { ScrollToTop } from './functions';
@@ -29,6 +30,7 @@ export default function App() {
         <Route path="/blog" element={<Blog />} />
         <Route path="/blog/:id" element={<BlogItem />} />
         <Route path="/pricing" element={<Pricing />} />
+        <Route path="/portfolio" element={<Portfolio />} />
       </Routes>
       <Footer />
       <ScrollToTop />

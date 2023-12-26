@@ -1,3 +1,11 @@
+import { Form, PortfolioContent, PortfolioHeader } from '../components';
+
 export default function Portfolio() {
-  return <div>Portfolio</div>;
+  return (
+    <>
+      <PortfolioHeader />
+      <PortfolioContent />
+      <Form />
+    </>
+  );
 }

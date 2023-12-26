@@ -1,3 +1,9 @@
+import { PricingHeader } from '../components';
+
 export default function Pricing() {
-  return <div>Pricing</div>;
+  return (
+    <>
+      <PricingHeader />
+    </>
+  );
 }

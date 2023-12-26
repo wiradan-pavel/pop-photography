@@ -1,0 +1,38 @@
+@import '../../styles/common';
+
+.titleHeader {
+  padding-top: 85px;
+  position: relative;
+  z-index: 2;
+
+  @media (max-width: $res768) {
+    text-align: center;
+    padding-top: 30px;
+  }
+
+  &__line {
+    position: absolute;
+    z-index: 1;
+    left: 0px;
+    top: 42%;
+
+    @media (max-width: $res1200) {
+      display: none;
+    }
+  }
+
+  &::before {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    height: 75px;
+    width: 157px;
+    background-color: $yellow;
+    right: -5px;  
+    bottom: 56%;
+
+    @media (max-width: $res1200) {
+      display: none;
+    }
+  }
+}
