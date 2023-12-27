@@ -10,9 +10,11 @@ export const pricingContent = {
   cards: [
     {
       id: 1,
-      title: 'Kids Snapshot Session',
+      isTarget: false,
+      title: 'Kids Snapshot',
+      title2: 'Session',
       discount: '25', // percent
-      dollar: '$',
+      valute: '$',
       price: '149',
       text: 'Minus id quod maxime place at facere possimus, omnis voluptas assu- menda omnis dolors repellendus tempor. Minus id quod maxi.',
       list: [
@@ -24,9 +26,11 @@ export const pricingContent = {
     },
     {
       id: 2,
-      title: 'Child Modelling Portfolio',
+      isTarget: true,
+      title: 'Child Modelling',
+      title2: 'Portfolio',
       discount: '25', // percent
-      dollar: '$',
+      valute: '$',
       price: '149',
       text: 'Minus id quod maxime place at facere possimus, omnis voluptas assu- menda omnis dolors',
       list: [
@@ -39,9 +43,11 @@ export const pricingContent = {
     },
     {
       id: 3,
-      title: 'Teen Modelling Deluxe Package',
+      isTarget: false,
+      title: 'Teen Modelling',
+      title2: 'Deluxe Package',
       discount: '25', // percent
-      dollar: '$',
+      valute: '$',
       price: '149',
       text: 'Minus id quod maxime place at facere possimus, omnis voluptas assu- menda omnis dolors repellendus tempor. Minus id quod maxi.',
       list: [

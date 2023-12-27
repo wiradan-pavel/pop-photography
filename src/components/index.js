@@ -68,6 +68,8 @@ import PortfolioContent from './PortfolioContent';
 
 // PRICING
 import PricingHeader from './PricingHeader';
+import PricingContent from './PricingContent';
+import PricingBanner from './PricingBanner';
 
 export {
   // *
@@ -140,4 +142,6 @@ export {
 
   // PRICING
   PricingHeader,
+  PricingContent,
+  PricingBanner,
 };

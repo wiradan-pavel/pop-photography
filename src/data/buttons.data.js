@@ -3,6 +3,11 @@ export const bookNowBtn = {
   link: '/pricing',
 };
 
+export const bookNowOrderBtn = {
+  text: 'Book Now',
+  link: '/',
+};
+
 export const learnMoreBtn = {
   text: 'LEARN MORE',
   link: '/about',
